@@ -47,6 +47,15 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-toggle-button-green.reaction.md",
       "summary": "Adds a verified toggle button with a green active preset, neutral inactive state, aria-pressed semantics, visible on/off states, keyboard support, optional persistence, and browser verification."
+    },
+    {
+      "id": "verified-secondary-button-neutral",
+      "name": "Verified Secondary Button Neutral",
+      "trigger": "/ReAction-verified-secondary-button-neutral",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-secondary-button-neutral.reaction.md",
+      "summary": "Adds a verified secondary action button with a neutral default preset, lower visual emphasis than primary actions, correct button/link semantics, accessibility requirements, disabled state, and browser verification."
     }
   ]
 }
