@@ -52,3 +52,26 @@ If you add a new ReAction:
 2. Update `reactions.json`.
 3. Update the relevant pack README.
 4. Run the validation script.
+
+## Try the demo project
+
+You can test frontend ReActions in:
+
+```txt
+examples/demo-next-tailwind
+```
+
+Example prompt:
+
+```txt
+Use /ReAction-verified-destructive-confirm-button-red.
+Add a Delete Workspace button to the danger zone.
+Require confirmation before deleting.
+Verify cancel and confirm paths in the browser.
+```
+
+## Example prompts
+
+See:
+
+[examples/prompts/](examples/prompts/)

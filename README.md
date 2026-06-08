@@ -11,7 +11,7 @@
 <p align="center">
   <a href="#quick-start">Quick start</a>
   ·
-  <a href="#reaction-catalog">Catalog</a>
+  <a href="docs/catalog.md">Catalog</a>
   ·
   <a href="#demos">Demos</a>
   ·
@@ -54,6 +54,34 @@ The agent should:
 6. Return the final report.
 
 ReActions can be used by native coding agents or by custom runners.
+
+## Try it in 2 minutes
+
+Clone the repo:
+
+```bash
+git clone https://github.com/Vatsalc26/ReActions.git
+cd ReActions
+```
+
+Open the demo project:
+
+```bash
+cd examples/demo-next-tailwind
+npm install
+npm run dev
+```
+
+Then ask your coding agent:
+
+```txt
+Use /ReAction-verified-async-cta-button-green.
+Add a "Create Project" button to the hero action area.
+When clicked, show "Creating..." then "Project created".
+Verify it in the browser.
+```
+
+Demo project: [`examples/demo-next-tailwind`](examples/demo-next-tailwind)
 
 ## Demos
 
@@ -115,6 +143,10 @@ A good ReAction defines:
 ## Repository structure
 
 ```txt
+examples/
+  demo-next-tailwind/
+  prompts/
+
 reactions/
   frontend/
     buttons/
@@ -127,6 +159,7 @@ reactions/
       README.md
 
 docs/
+  catalog.md
   reaction-format.md
   reaction-quality-checklist.md
   reaction-preview-format.md
@@ -184,6 +217,8 @@ A ReAction should not claim success unless its required verification passes.
 
 ## Project docs
 
+- [ReAction Catalog](docs/catalog.md)
+- [Example prompts](examples/prompts/README.md)
 - [ReAction format](docs/reaction-format.md)
 - [ReAction quality checklist](docs/reaction-quality-checklist.md)
 - [ReAction preview format](docs/reaction-preview-format.md)
