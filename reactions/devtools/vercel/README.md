@@ -8,6 +8,7 @@ This folder contains executable recipes for Vercel-related developer tasks.
 |---|---|---|
 | Check Vercel Analytics | `/ReAction-check-vercel-analytics` | You want a consistent read-only analytics report for a Vercel project and date range using CLI-only local capabilities or a project-provided analytics adapter. |
 | Check Vercel Usage | `/ReAction-check-vercel-usage` | You want a consistent read-only usage/cost report using the official `vercel usage` CLI command. |
+| Check Vercel Deployment Status | `/ReAction-check-vercel-deployment-status` | You want a consistent read-only deployment status report using Vercel CLI commands like `vercel list`, `vercel inspect`, and optionally bounded `vercel logs`. |
 
 ## Notes
 
@@ -30,10 +31,29 @@ Do not confuse these two:
 - `vercel usage` = usage/cost/resource consumption
 - Web Analytics = visitors/page views/product analytics
 
+## Deployment status
+
+Use `/ReAction-check-vercel-deployment-status` for recent deployment state and health.
+
+It is read-only and CLI-only.
+
+It may use:
+
+- `vercel list`
+- `vercel inspect`
+- `vercel logs` only when needed or requested
+
+It must not use:
+
+- `vercel deploy`
+- `vercel redeploy`
+- `vercel promote`
+- `vercel rollback`
+- `vercel remove`
+
 ## Future Vercel ReActions
 
 Possible future additions:
 
-- `/ReAction-check-vercel-deployment-status`
 - `/ReAction-check-vercel-error-logs`
 - `/ReAction-check-vercel-env-summary`
