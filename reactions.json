@@ -20,6 +20,24 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-destructive-confirm-button-red.reaction.md",
       "summary": "Adds a verified destructive action button with a red default preset, mandatory confirmation flow, cancel path, async loading state, success feedback, and browser verification."
+    },
+    {
+      "id": "verified-copy-button-neutral",
+      "name": "Verified Copy Button Neutral",
+      "trigger": "/ReAction-verified-copy-button-neutral",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-copy-button-neutral.reaction.md",
+      "summary": "Adds a verified copy button with a neutral default preset, clipboard behavior, copied feedback, failure handling, accessibility requirements, and browser verification."
+    },
+    {
+      "id": "verified-icon-button-neutral",
+      "name": "Verified Icon Button Neutral",
+      "trigger": "/ReAction-verified-icon-button-neutral",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-icon-button-neutral.reaction.md",
+      "summary": "Adds a verified icon button with a neutral default preset, accessible labeling, keyboard support, disabled state, optional tooltip/feedback, and browser verification."
     }
   ]
 }
