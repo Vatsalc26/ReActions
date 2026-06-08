@@ -56,6 +56,15 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-secondary-button-neutral.reaction.md",
       "summary": "Adds a verified secondary action button with a neutral default preset, lower visual emphasis than primary actions, correct button/link semantics, accessibility requirements, disabled state, and browser verification."
+    },
+    {
+      "id": "verified-floating-action-button-green",
+      "name": "Verified Floating Action Button Green",
+      "trigger": "/ReAction-verified-floating-action-button-green",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-floating-action-button-green.reaction.md",
+      "summary": "Adds a verified floating action button with a green default preset, safe fixed/floating placement, accessible label, optional icon/label behavior, responsive layout rules, and browser verification."
     }
   ]
 }

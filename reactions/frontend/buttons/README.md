@@ -26,6 +26,7 @@ These ReActions are not just style prompts. Each one defines:
 | Verified Copy Button Neutral | `/ReAction-verified-copy-button-neutral` | You need to copy a value such as an API key, invite link, webhook URL, install command, code snippet, environment variable, or share link. |
 | Verified Icon Button Neutral | `/ReAction-verified-icon-button-neutral` | You need a compact icon-only or icon-first action such as settings, search, close, menu, edit, refresh, sidebar toggle, or more actions. |
 | Verified Toggle Button Green | `/ReAction-verified-toggle-button-green` | You need a stateful on/off action such as dark mode, notifications, auto-save, favorite, publish, enable integration, or compact mode. |
+| Verified Floating Action Button Green | `/ReAction-verified-floating-action-button-green` | You need a prominent floating quick action such as create, add item, compose, quick add, start chat, or new task. |
 
 ---
 
@@ -215,6 +216,35 @@ This ReAction requires:
 
 ---
 
+## Use Floating Action Button for prominent quick actions
+
+Use:
+
+```txt
+/ReAction-verified-floating-action-button-green
+```
+
+For actions like:
+
+* Create
+* Add item
+* New task
+* Compose
+* Start chat
+* Quick add
+* Upload
+
+This ReAction requires:
+
+* safe floating/fixed placement
+* accessible label
+* keyboard accessibility
+* focus-visible state
+* no overlap with important UI
+* browser verification
+
+---
+
 # Decision Guide
 
 Use this quick guide:
@@ -237,6 +267,9 @@ Is it compact/icon-only?
 
 Is it an on/off state?
 → Use verified-toggle-button-green
+
+Is it a prominent floating quick action?
+→ Use verified-floating-action-button-green
 ```
 
 If more than one applies, choose the stricter ReAction.
@@ -286,7 +319,6 @@ incomplete_verification
 
 Possible future additions:
 
-* Verified Floating Action Button Green
 * Verified Split Button Menu
 * Verified File Upload Button
 * Verified OAuth Sign-in Button
