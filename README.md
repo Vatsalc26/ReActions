@@ -46,6 +46,12 @@ The first pack is focused on modern frontend button patterns:
 
 See [`reactions/frontend/buttons/README.md`](reactions/frontend/buttons/README.md) for the button decision guide.
 
+### DevTools / Vercel
+
+- `/ReAction-check-vercel-analytics`
+
+See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md) for Vercel ReActions.
+
 ## Repository Structure
 
 ```txt

@@ -74,6 +74,15 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-split-button-menu.reaction.md",
       "summary": "Adds a verified split button with a primary action, secondary menu actions, accessible menu behavior, keyboard support, open/close state, optional async primary action, and browser verification."
+    },
+    {
+      "id": "check-vercel-analytics",
+      "name": "Check Vercel Analytics",
+      "trigger": "/ReAction-check-vercel-analytics",
+      "category": "devtools",
+      "subcategory": "vercel",
+      "path": "reactions/devtools/vercel/check-vercel-analytics.reaction.md",
+      "summary": "Checks Vercel Web Analytics for a project and date range using CLI-only read-only commands or a local analytics adapter, then produces a consistent analytics report."
     }
   ]
 }
