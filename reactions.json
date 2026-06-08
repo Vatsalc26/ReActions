@@ -1,6 +1,7 @@
 {
   "name": "ReActions",
   "version": "0.1.0",
+  "schema_version": "0.2.0",
   "description": "Markdown-defined, executable recipes for coding agents.",
   "reactions": [
     {
@@ -10,7 +11,45 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-async-cta-button-green.reaction.md",
-      "summary": "Adds a verified async CTA button with a green default preset, explicit style overrides, accessibility requirements, loading state, success feedback, and browser verification."
+      "summary": "Adds a verified async CTA button with a green default preset, explicit style overrides, accessibility requirements, loading state, success feedback, and browser verification.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "cta", "async", "loading-state", "success-state", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-secondary-button-neutral", "relationship": "use-with" },
+        { "id": "verified-split-button-menu", "relationship": "alternative" },
+        { "id": "verified-destructive-confirm-button-red", "relationship": "do-not-confuse-with" }
+      ]
     },
     {
       "id": "verified-destructive-confirm-button-red",
@@ -19,7 +58,44 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-destructive-confirm-button-red.reaction.md",
-      "summary": "Adds a verified destructive action button with a red default preset, mandatory confirmation flow, cancel path, async loading state, success feedback, and browser verification."
+      "summary": "Adds a verified destructive action button with a red default preset, mandatory confirmation flow, cancel path, async loading state, success feedback, and browser verification.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": ["frontend", "button", "destructive", "confirmation", "danger-zone", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-secondary-button-neutral", "relationship": "use-with" },
+        { "id": "verified-async-cta-button-green", "relationship": "do-not-confuse-with" }
+      ]
     },
     {
       "id": "verified-copy-button-neutral",
@@ -28,7 +104,44 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-copy-button-neutral.reaction.md",
-      "summary": "Adds a verified copy button with a neutral default preset, clipboard behavior, copied feedback, failure handling, accessibility requirements, and browser verification."
+      "summary": "Adds a verified copy button with a neutral default preset, clipboard behavior, copied feedback, failure handling, accessibility requirements, and browser verification.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "copy", "clipboard", "feedback", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-icon-button-neutral", "relationship": "alternative" },
+        { "id": "verified-secondary-button-neutral", "relationship": "use-with" }
+      ]
     },
     {
       "id": "verified-icon-button-neutral",
@@ -37,7 +150,45 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-icon-button-neutral.reaction.md",
-      "summary": "Adds a verified icon button with a neutral default preset, accessible labeling, keyboard support, disabled state, optional tooltip/feedback, and browser verification."
+      "summary": "Adds a verified icon button with a neutral default preset, accessible labeling, keyboard support, disabled state, optional tooltip/feedback, and browser verification.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "icon-button", "aria-label", "keyboard", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-copy-button-neutral", "relationship": "alternative" },
+        { "id": "verified-toggle-button-green", "relationship": "alternative" },
+        { "id": "verified-split-button-menu", "relationship": "use-with" }
+      ]
     },
     {
       "id": "verified-toggle-button-green",
@@ -46,7 +197,44 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-toggle-button-green.reaction.md",
-      "summary": "Adds a verified toggle button with a green active preset, neutral inactive state, aria-pressed semantics, visible on/off states, keyboard support, optional persistence, and browser verification."
+      "summary": "Adds a verified toggle button with a green active preset, neutral inactive state, aria-pressed semantics, visible on/off states, keyboard support, optional persistence, and browser verification.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "toggle", "stateful", "aria-pressed", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-icon-button-neutral", "relationship": "alternative" },
+        { "id": "verified-secondary-button-neutral", "relationship": "use-with" }
+      ]
     },
     {
       "id": "verified-secondary-button-neutral",
@@ -55,7 +243,44 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-secondary-button-neutral.reaction.md",
-      "summary": "Adds a verified secondary action button with a neutral default preset, lower visual emphasis than primary actions, correct button/link semantics, accessibility requirements, disabled state, and browser verification."
+      "summary": "Adds a verified secondary action button with a neutral default preset, lower visual emphasis than primary actions, correct button/link semantics, accessibility requirements, disabled state, and browser verification.",
+      "difficulty": "beginner",
+      "estimated_context_tokens": "6k-10k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "secondary", "neutral", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-async-cta-button-green", "relationship": "use-with" },
+        { "id": "verified-icon-button-neutral", "relationship": "alternative" }
+      ]
     },
     {
       "id": "verified-floating-action-button-green",
@@ -64,7 +289,44 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-floating-action-button-green.reaction.md",
-      "summary": "Adds a verified floating action button with a green default preset, safe fixed/floating placement, accessible label, optional icon/label behavior, responsive layout rules, and browser verification."
+      "summary": "Adds a verified floating action button with a green default preset, safe fixed/floating placement, accessible label, optional icon/label behavior, responsive layout rules, and browser verification.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "floating-action-button", "fab", "responsive", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-async-cta-button-green", "relationship": "alternative" },
+        { "id": "verified-icon-button-neutral", "relationship": "use-with" }
+      ]
     },
     {
       "id": "verified-split-button-menu",
@@ -73,7 +335,45 @@
       "category": "frontend",
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-split-button-menu.reaction.md",
-      "summary": "Adds a verified split button with a primary action, secondary menu actions, accessible menu behavior, keyboard support, open/close state, optional async primary action, and browser verification."
+      "summary": "Adds a verified split button with a primary action, secondary menu actions, accessible menu behavior, keyboard support, open/close state, optional async primary action, and browser verification.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "react",
+        "nextjs",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "astro",
+        "solid",
+        "angular",
+        "vanilla-js",
+        "tailwindcss",
+        "css-modules"
+      ],
+      "capabilities": [
+        "read-files",
+        "edit-files",
+        "inspect-components",
+        "run-commands",
+        "browser-preview",
+        "browser-interaction",
+        "accessibility-check"
+      ],
+      "verification": [
+        "static",
+        "browser",
+        "accessibility"
+      ],
+      "safety_level": "medium",
+      "read_only": false,
+      "tags": ["frontend", "button", "split-button", "menu", "keyboard-navigation", "accessibility", "browser-verification"],
+      "related_reactions": [
+        { "id": "verified-async-cta-button-green", "relationship": "alternative" },
+        { "id": "verified-secondary-button-neutral", "relationship": "use-with" },
+        { "id": "verified-icon-button-neutral", "relationship": "use-with" }
+      ]
     },
     {
       "id": "check-vercel-analytics",
@@ -82,7 +382,42 @@
       "category": "devtools",
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-analytics.reaction.md",
-      "summary": "Checks Vercel Web Analytics for a project and date range using CLI-only read-only commands or a local analytics adapter, then produces a consistent analytics report."
+      "summary": "Checks Vercel Web Analytics for a project and date range using CLI-only read-only commands or a local analytics adapter, then produces a consistent analytics report.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "vercel",
+        "vercel-cli",
+        "nextjs",
+        "react",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "framework-agnostic-vercel-project"
+      ],
+      "capabilities": [
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "terminal",
+        "static"
+      ],
+      "safety_level": "medium",
+      "read_only": true,
+      "tags": ["devtools", "vercel", "analytics", "web-analytics", "cli-only", "read-only", "adapter"],
+      "related_reactions": [
+        { "id": "check-vercel-usage", "relationship": "do-not-confuse-with" },
+        { "id": "check-vercel-deployment-status", "relationship": "use-with" }
+      ]
     },
     {
       "id": "check-vercel-usage",
@@ -91,7 +426,42 @@
       "category": "devtools",
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-usage.reaction.md",
-      "summary": "Checks Vercel billing/resource usage for a date range using the official Vercel CLI, then produces a consistent read-only usage and cost report."
+      "summary": "Checks Vercel billing/resource usage for a date range using the official Vercel CLI, then produces a consistent read-only usage and cost report.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "vercel",
+        "vercel-cli",
+        "nextjs",
+        "react",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "framework-agnostic-vercel-project"
+      ],
+      "capabilities": [
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "terminal",
+        "static"
+      ],
+      "safety_level": "low",
+      "read_only": true,
+      "tags": ["devtools", "vercel", "usage", "cost", "billing", "cli-only", "read-only"],
+      "related_reactions": [
+        { "id": "check-vercel-analytics", "relationship": "do-not-confuse-with" },
+        { "id": "check-vercel-deployment-status", "relationship": "use-with" }
+      ]
     },
     {
       "id": "check-vercel-deployment-status",
@@ -100,7 +470,43 @@
       "category": "devtools",
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-deployment-status.reaction.md",
-      "summary": "Checks recent Vercel deployment status using CLI-only read-only commands, then produces a consistent deployment health report."
+      "summary": "Checks recent Vercel deployment status using CLI-only read-only commands, then produces a consistent deployment health report.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "vercel",
+        "vercel-cli",
+        "nextjs",
+        "react",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "framework-agnostic-vercel-project"
+      ],
+      "capabilities": [
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "terminal",
+        "static"
+      ],
+      "safety_level": "low",
+      "read_only": true,
+      "tags": ["devtools", "vercel", "deployment", "status", "health", "cli-only", "read-only"],
+      "related_reactions": [
+        { "id": "check-vercel-error-logs", "relationship": "next-step" },
+        { "id": "check-vercel-usage", "relationship": "use-with" },
+        { "id": "check-vercel-analytics", "relationship": "use-with" }
+      ]
     },
     {
       "id": "check-vercel-error-logs",
@@ -109,7 +515,43 @@
       "category": "devtools",
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-error-logs.reaction.md",
-      "summary": "Checks Vercel runtime/error logs using CLI-only read-only commands, then produces a consistent log diagnosis report without exposing secrets."
+      "summary": "Checks Vercel runtime/error logs using CLI-only read-only commands, then produces a consistent log diagnosis report without exposing secrets.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "vercel",
+        "vercel-cli",
+        "nextjs",
+        "react",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "framework-agnostic-vercel-project"
+      ],
+      "capabilities": [
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "terminal",
+        "static",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": true,
+      "tags": ["devtools", "vercel", "logs", "errors", "debugging", "redaction", "cli-only", "read-only"],
+      "related_reactions": [
+        { "id": "check-vercel-deployment-status", "relationship": "prerequisite" },
+        { "id": "check-vercel-analytics", "relationship": "do-not-confuse-with" }
+      ]
     }
   ]
 }

@@ -221,6 +221,7 @@ A ReAction should not claim success unless its required verification passes.
 
 - [ReAction Catalog](docs/catalog.md)
 - [Example prompts](examples/prompts/README.md)
+- [reactions.json schema](docs/reactions-json-schema.md)
 - [ReAction format](docs/reaction-format.md)
 - [ReAction quality checklist](docs/reaction-quality-checklist.md)
 - [ReAction preview format](docs/reaction-preview-format.md)
