@@ -38,6 +38,15 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-icon-button-neutral.reaction.md",
       "summary": "Adds a verified icon button with a neutral default preset, accessible labeling, keyboard support, disabled state, optional tooltip/feedback, and browser verification."
+    },
+    {
+      "id": "verified-toggle-button-green",
+      "name": "Verified Toggle Button Green",
+      "trigger": "/ReAction-verified-toggle-button-green",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-toggle-button-green.reaction.md",
+      "summary": "Adds a verified toggle button with a green active preset, neutral inactive state, aria-pressed semantics, visible on/off states, keyboard support, optional persistence, and browser verification."
     }
   ]
 }
