@@ -24,17 +24,27 @@ Same task. Same quality. Any agent.
 
 These early demos show ReActions being used with a coding/browser agent.
 
-- Demo 1: coming soon
-- Demo 2: coming soon
+- [Demo 1: Destructive Confirm Button Red](https://github.com/Vatsalc26/ReActions/releases/download/v0.1-demo/demo-1-destructive-confirm-button-red.mp4)
+- [Demo 2: Destructive button back to Green Submit / Async CTA](https://github.com/Vatsalc26/ReActions/releases/download/v0.1-demo/demo-2-destructive-to-green-submit-button.mp4)
 
-The demo videos are available locally but were not committed because they are large binary files. They should be uploaded externally and linked here.
+The videos are stored as GitHub Release assets so the repository stays lightweight.
 
 ## Current Packs
 
 ### Frontend / Buttons
 
+The first pack is focused on modern frontend button patterns:
+
 - `/ReAction-verified-async-cta-button-green`
+- `/ReAction-verified-secondary-button-neutral`
 - `/ReAction-verified-destructive-confirm-button-red`
+- `/ReAction-verified-copy-button-neutral`
+- `/ReAction-verified-icon-button-neutral`
+- `/ReAction-verified-toggle-button-green`
+- `/ReAction-verified-floating-action-button-green`
+- `/ReAction-verified-split-button-menu`
+
+See [`reactions/frontend/buttons/README.md`](reactions/frontend/buttons/README.md) for the button decision guide.
 
 ## Repository Structure
 
@@ -89,6 +99,36 @@ Planned direction:
 * Verified Split Button Menu
 * Verified File Upload Button
 * Verified OAuth Sign-in Button
+
+## How to contribute
+
+This project is early and feedback is welcome.
+
+Good contributions include:
+
+- improving an existing ReAction
+- adding missing pause conditions
+- improving accessibility requirements
+- improving browser verification requirements
+- adding example prompts
+- adding preview metadata
+- creating new ReActions for common frontend patterns
+- testing ReActions with different coding agents
+
+Look for issues labeled:
+
+```txt
+good first issue
+```
+
+A good ReAction should be:
+
+* human-readable
+* agent-followable
+* provider-agnostic
+* capability-based
+* safety-aware
+* verification-driven
 
 ## Status
 
