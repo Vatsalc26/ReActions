@@ -65,6 +65,15 @@
       "subcategory": "buttons",
       "path": "reactions/frontend/buttons/verified-floating-action-button-green.reaction.md",
       "summary": "Adds a verified floating action button with a green default preset, safe fixed/floating placement, accessible label, optional icon/label behavior, responsive layout rules, and browser verification."
+    },
+    {
+      "id": "verified-split-button-menu",
+      "name": "Verified Split Button Menu",
+      "trigger": "/ReAction-verified-split-button-menu",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-split-button-menu.reaction.md",
+      "summary": "Adds a verified split button with a primary action, secondary menu actions, accessible menu behavior, keyboard support, open/close state, optional async primary action, and browser verification."
     }
   ]
 }

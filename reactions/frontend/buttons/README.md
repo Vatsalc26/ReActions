@@ -27,6 +27,7 @@ These ReActions are not just style prompts. Each one defines:
 | Verified Icon Button Neutral | `/ReAction-verified-icon-button-neutral` | You need a compact icon-only or icon-first action such as settings, search, close, menu, edit, refresh, sidebar toggle, or more actions. |
 | Verified Toggle Button Green | `/ReAction-verified-toggle-button-green` | You need a stateful on/off action such as dark mode, notifications, auto-save, favorite, publish, enable integration, or compact mode. |
 | Verified Floating Action Button Green | `/ReAction-verified-floating-action-button-green` | You need a prominent floating quick action such as create, add item, compose, quick add, start chat, or new task. |
+| Verified Split Button Menu | `/ReAction-verified-split-button-menu` | You need a primary action with related secondary menu actions such as save options, export formats, deploy targets, or share actions. |
 
 ---
 
@@ -245,6 +246,33 @@ This ReAction requires:
 
 ---
 
+## Use Split Button Menu for primary action plus related options
+
+Use:
+
+```txt
+/ReAction-verified-split-button-menu
+```
+
+For actions like:
+
+* Save + Save as draft / Save and close
+* Export + CSV / PDF / JSON
+* Deploy + Preview / Production / Dry run
+* Create + Project / Team / Workspace
+* Share + Copy link / Invite / Email
+
+This ReAction requires:
+
+* primary action button
+* separate menu trigger
+* accessible menu behavior
+* menu open/close state
+* keyboard accessibility when possible
+* browser verification
+
+---
+
 # Decision Guide
 
 Use this quick guide:
@@ -270,6 +298,9 @@ Is it an on/off state?
 
 Is it a prominent floating quick action?
 → Use verified-floating-action-button-green
+
+Is it one primary action plus related menu options?
+→ Use verified-split-button-menu
 ```
 
 If more than one applies, choose the stricter ReAction.
@@ -319,7 +350,6 @@ incomplete_verification
 
 Possible future additions:
 
-* Verified Split Button Menu
 * Verified File Upload Button
 * Verified OAuth Sign-in Button
 * Verified Pagination Button
