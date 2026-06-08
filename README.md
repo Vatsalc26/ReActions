@@ -96,6 +96,8 @@ The videos are stored as GitHub Release assets so the repository stays lightweig
 
 ## ReAction Catalog
 
+For the full browseable catalog with file links, safety notes, and verification notes, see [`docs/catalog.md`](docs/catalog.md).
+
 ### Frontend / Buttons
 
 | ReAction | Trigger | Use when |
