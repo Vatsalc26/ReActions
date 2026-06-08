@@ -101,6 +101,15 @@
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-deployment-status.reaction.md",
       "summary": "Checks recent Vercel deployment status using CLI-only read-only commands, then produces a consistent deployment health report."
+    },
+    {
+      "id": "check-vercel-error-logs",
+      "name": "Check Vercel Error Logs",
+      "trigger": "/ReAction-check-vercel-error-logs",
+      "category": "devtools",
+      "subcategory": "vercel",
+      "path": "reactions/devtools/vercel/check-vercel-error-logs.reaction.md",
+      "summary": "Checks Vercel runtime/error logs using CLI-only read-only commands, then produces a consistent log diagnosis report without exposing secrets."
     }
   ]
 }
