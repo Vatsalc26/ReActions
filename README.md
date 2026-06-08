@@ -1,16 +1,33 @@
 # ReActions
 
-ReActions are Markdown-defined, skill-led workflows for LLM agents.
+**ReActions are executable recipes for coding agents.**
 
-A ReAction describes how an agent should complete a reusable task through phases, skills, tool/capability usage, pause conditions, verification, and final reporting.
+A ReAction is a Markdown-defined recipe that tells an AI coding agent how to implement and verify a reusable task.
 
-ReActions are designed to be portable across:
+Instead of asking every model to invent its own approach, a ReAction gives the agent a repeatable recipe with:
 
-- native coding agents
-- LLM providers
-- local model runners
-- browser-enabled agents
-- custom ReAction runners
+- phases
+- skills
+- required capabilities
+- pause conditions
+- safety rules
+- verification rules
+- final reporting
+
+The goal:
+
+```txt
+Same task. Same quality. Any agent.
+```
+
+## Demos
+
+These early demos show ReActions being used with a coding/browser agent.
+
+- Demo 1: coming soon
+- Demo 2: coming soon
+
+The demo videos are available locally but were not committed because they are large binary files. They should be uploaded externally and linked here.
 
 ## Current Packs
 

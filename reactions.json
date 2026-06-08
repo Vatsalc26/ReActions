@@ -1,7 +1,7 @@
 {
   "name": "ReActions",
   "version": "0.1.0",
-  "description": "Markdown-defined, skill-led workflows for LLM agents.",
+  "description": "Markdown-defined, executable recipes for coding agents.",
   "reactions": [
     {
       "id": "verified-async-cta-button-green",

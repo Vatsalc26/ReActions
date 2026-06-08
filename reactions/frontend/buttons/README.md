@@ -1,8 +1,8 @@
 # Frontend Button ReActions
 
-This folder contains ReActions for common modern frontend button patterns.
+This folder contains executable recipes for common modern frontend button patterns.
 
-Each `.reaction.md` file is a portable, provider-agnostic playbook that an LLM agent or coding agent can follow to add a specific kind of button to a frontend project.
+Each `.reaction.md` file is a portable, provider-agnostic recipe that a coding agent can follow to add and verify a specific kind of button in a frontend project.
 
 These ReActions are not just style prompts. Each one defines:
 

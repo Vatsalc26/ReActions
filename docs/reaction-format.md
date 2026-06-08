@@ -1,8 +1,36 @@
 # ReAction Format
 
-A ReAction is a Markdown playbook for LLM agents.
+A ReAction is an executable Markdown recipe for coding agents.
 
-It should be readable by humans and executable by agents.
+It should be readable by humans and followable by agents.
+
+A ReAction describes how to complete a reusable task through phases, skills, capability usage, pause conditions, verification, and final reporting.
+
+## Terminology
+
+### ReAction
+
+A single executable recipe for a coding agent.
+
+Example:
+
+```txt
+verified-copy-button-neutral.reaction.md
+```
+
+### ReAction Pack
+
+A collection of related ReActions.
+
+Example:
+
+```txt
+Frontend Button ReActions
+```
+
+### Capability
+
+A tool-like ability the agent or runner must provide, such as reading files, editing files, running commands, opening a browser, or clicking UI.
 
 ## Recommended File Name
 
