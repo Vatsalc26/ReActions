@@ -1,0 +1,25 @@
+{
+  "name": "ReActions",
+  "version": "0.1.0",
+  "description": "Markdown-defined, skill-led workflows for LLM agents.",
+  "reactions": [
+    {
+      "id": "verified-async-cta-button-green",
+      "name": "Verified Async CTA Button Green",
+      "trigger": "/ReAction-verified-async-cta-button-green",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-async-cta-button-green.reaction.md",
+      "summary": "Adds a verified async CTA button with a green default preset, explicit style overrides, accessibility requirements, loading state, success feedback, and browser verification."
+    },
+    {
+      "id": "verified-destructive-confirm-button-red",
+      "name": "Verified Destructive Confirm Button Red",
+      "trigger": "/ReAction-verified-destructive-confirm-button-red",
+      "category": "frontend",
+      "subcategory": "buttons",
+      "path": "reactions/frontend/buttons/verified-destructive-confirm-button-red.reaction.md",
+      "summary": "Adds a verified destructive action button with a red default preset, mandatory confirmation flow, cancel path, async loading state, success feedback, and browser verification."
+    }
+  ]
+}
