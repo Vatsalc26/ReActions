@@ -49,6 +49,7 @@ See [`reactions/frontend/buttons/README.md`](reactions/frontend/buttons/README.m
 ### DevTools / Vercel
 
 - `/ReAction-check-vercel-analytics`
+- `/ReAction-check-vercel-usage`
 
 See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md) for Vercel ReActions.
 

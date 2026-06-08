@@ -83,6 +83,15 @@
       "subcategory": "vercel",
       "path": "reactions/devtools/vercel/check-vercel-analytics.reaction.md",
       "summary": "Checks Vercel Web Analytics for a project and date range using CLI-only read-only commands or a local analytics adapter, then produces a consistent analytics report."
+    },
+    {
+      "id": "check-vercel-usage",
+      "name": "Check Vercel Usage",
+      "trigger": "/ReAction-check-vercel-usage",
+      "category": "devtools",
+      "subcategory": "vercel",
+      "path": "reactions/devtools/vercel/check-vercel-usage.reaction.md",
+      "summary": "Checks Vercel billing/resource usage for a date range using the official Vercel CLI, then produces a consistent read-only usage and cost report."
     }
   ]
 }
