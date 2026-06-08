@@ -1,0 +1,16 @@
+name: Docs improvement
+description: Suggest a docs or README improvement
+title: "Docs: "
+labels: ["docs"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement

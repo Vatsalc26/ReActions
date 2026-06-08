@@ -1,0 +1,41 @@
+name: Agent test report
+description: Report how a ReAction worked with a coding agent
+title: "Agent test: "
+labels: ["testing"]
+body:
+  - type: input
+    id: reaction-id
+    attributes:
+      label: ReAction id
+      placeholder: verified-secondary-button-neutral
+    validations:
+      required: true
+
+  - type: input
+    id: agent
+    attributes:
+      label: Agent/tool used
+      placeholder: Cursor, Claude, Codex, Gemini, local model runner, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: project-type
+    attributes:
+      label: Project type
+      placeholder: React, Next.js, Vue, Svelte, plain HTML, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened?
+      description: What worked, what failed, what was confusing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested ReAction improvement

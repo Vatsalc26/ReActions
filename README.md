@@ -130,6 +130,21 @@ A good ReAction should be:
 * safety-aware
 * verification-driven
 
+## Project docs
+
+- [ReAction format](docs/reaction-format.md)
+- [ReAction quality checklist](docs/reaction-quality-checklist.md)
+- [ReAction preview format](docs/reaction-preview-format.md)
+- [Contributing](CONTRIBUTING.md)
+
+## Validate the ReActions index
+
+Run:
+
+```bash
+node scripts/validate-reactions-index.mjs
+```
+
 ## Status
 
 Early experimental repo.

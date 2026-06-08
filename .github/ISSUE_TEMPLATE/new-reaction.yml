@@ -1,0 +1,36 @@
+name: New ReAction
+description: Suggest or add a new ReAction recipe
+title: "Add ReAction: "
+labels: ["good first issue"]
+body:
+  - type: input
+    id: reaction-name
+    attributes:
+      label: ReAction name
+      placeholder: verified-file-upload-button
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What reusable task should this ReAction help a coding agent complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: contract
+    attributes:
+      label: Contract
+      description: What must the agent always preserve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: How should the agent verify completion?
+    validations:
+      required: true

@@ -38,3 +38,17 @@ Good first contributions:
 * add preview metadata
 * add docs
 * add another common frontend button pattern
+
+## Before opening a PR
+
+Please check:
+
+- [ReAction quality checklist](docs/reaction-quality-checklist.md)
+- `node scripts/validate-reactions-index.mjs`
+
+If you add a new ReAction:
+
+1. Add the `.reaction.md` file.
+2. Update `reactions.json`.
+3. Update the relevant pack README.
+4. Run the validation script.

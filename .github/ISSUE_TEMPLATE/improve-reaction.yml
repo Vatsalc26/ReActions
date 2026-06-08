@@ -1,0 +1,26 @@
+name: Improve existing ReAction
+description: Suggest improvements to an existing ReAction
+title: "Improve ReAction: "
+labels: ["help wanted"]
+body:
+  - type: input
+    id: reaction-id
+    attributes:
+      label: ReAction id
+      placeholder: verified-copy-button-neutral
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should improve?
+      description: Describe the ambiguity, missing rule, missing safety check, or unclear verification.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-change
+    attributes:
+      label: Suggested change
+      description: What should the ReAction say instead?
