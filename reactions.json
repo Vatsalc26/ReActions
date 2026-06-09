@@ -894,6 +894,79 @@
           "relationship": "use-with"
         }
       ]
+    },
+    {
+      "id": "setup-bun-ci-github-actions",
+      "name": "Setup Bun CI GitHub Actions",
+      "trigger": "/ReAction-setup-bun-ci-github-actions",
+      "category": "devtools",
+      "subcategory": "bun",
+      "path": "reactions/devtools/bun/setup-bun-ci-github-actions.reaction.md",
+      "summary": "Safely adds or updates GitHub Actions CI for a Bun-based JavaScript or TypeScript project using workflow inspection, confirmation gates, and static verification.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "12k-20k",
+      "supported_frameworks": [
+        "bun",
+        "github-actions",
+        "javascript",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "hono",
+        "elysia",
+        "package-json-project"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "edit-files",
+        "parse-json",
+        "parse-yaml",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "bun",
+        "github-actions",
+        "ci",
+        "workflow",
+        "javascript",
+        "typescript",
+        "confirmation-gates",
+        "static-verification",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "check-bun-project-health",
+          "relationship": "prerequisite"
+        },
+        {
+          "id": "run-bun-test-and-diagnose",
+          "relationship": "use-with"
+        },
+        {
+          "id": "bun-build-check",
+          "relationship": "use-with"
+        },
+        {
+          "id": "migrate-project-to-bun",
+          "relationship": "use-with"
+        }
+      ]
     }
   ]
 }

@@ -11,6 +11,7 @@ This folder contains executable recipes for Bun-related developer tasks.
 | Migrate Project to Bun | `/ReAction-migrate-project-to-bun` | You want to safely migrate a JavaScript/TypeScript project to Bun with inspection-first planning, confirmation gates, and verification. |
 | Bun Build Check | `/ReAction-bun-build-check` | You want to check whether a project builds with Bun-related build commands and diagnose build failures with static fallback when Bun CLI is missing. |
 | Setup Bun Test Runner | `/ReAction-setup-bun-test-runner` | You want to safely add or improve a Bun test setup for a JavaScript/TypeScript project with inspection-first planning, confirmation gates, and verification. |
+| Setup Bun CI GitHub Actions | `/ReAction-setup-bun-ci-github-actions` | You want to safely add or update GitHub Actions CI for Bun with workflow inspection, confirmation gates, and static verification. |
 
 ## Notes
 
@@ -135,6 +136,35 @@ Safety defaults:
 - do not install dependencies unless explicitly confirmed
 - do not remove Jest/Vitest/Playwright without explicit confirmation
 - do not modify source code
+
+## GitHub Actions CI
+
+Use `/ReAction-setup-bun-ci-github-actions` when you want an agent to safely add or update GitHub Actions CI for a Bun project.
+
+Recommended flow:
+
+1. Run `/ReAction-check-bun-project-health`.
+2. Run `/ReAction-run-bun-test-and-diagnose`.
+3. Run `/ReAction-bun-build-check`.
+4. Run `/ReAction-setup-bun-ci-github-actions`.
+
+This ReAction may edit workflow files only after confirmation.
+
+It should use:
+
+- `actions/checkout@v4`
+- `oven-sh/setup-bun@v2`
+- `bun ci` when `bun.lock` exists
+- `bun install` when `bun.lock` is missing
+- project scripts only when they exist
+
+It must not:
+
+- overwrite existing workflows without confirmation
+- modify deployment workflows without confirmation
+- delete old npm/pnpm/yarn CI jobs without confirmation
+- add commands for scripts that do not exist
+- print secrets
 
 ## Future Bun ReActions
 

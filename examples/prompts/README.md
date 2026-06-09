@@ -148,3 +148,24 @@ Important:
 - Verify the setup by running bun test if Bun is available.
 - Return the final Bun Test Runner Setup Report.
 ```
+
+## Bun GitHub Actions CI example
+
+```txt
+Use /ReAction-setup-bun-ci-github-actions.
+
+Safely add GitHub Actions CI for this Bun project.
+
+Important:
+- Inspect package.json, bun.lock, and existing workflows first.
+- Create a CI plan before editing files.
+- Ask before creating or updating workflow files.
+- Use oven-sh/setup-bun@v2.
+- Use bun ci only if bun.lock exists.
+- Use bun install if bun.lock is missing.
+- Do not overwrite existing workflows without confirmation.
+- Do not modify deployment workflows without confirmation.
+- Do not remove npm/pnpm/yarn jobs unless I explicitly confirm.
+- Only add commands for scripts that exist.
+- Return the final Bun GitHub Actions CI Report.
+```
