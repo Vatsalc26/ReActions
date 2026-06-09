@@ -128,7 +128,7 @@ See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md)
 
 | ReAction | Trigger | Use when |
 |---|---|---|
-| Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe CLI-only report on whether a JavaScript/TypeScript project is ready to use Bun. |
+| Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe report on whether a JavaScript/TypeScript project is ready to use Bun, with static fallback when Bun CLI is missing. |
 
 See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for Bun ReActions.
 

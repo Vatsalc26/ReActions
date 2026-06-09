@@ -6,11 +6,21 @@ This folder contains executable recipes for Bun-related developer tasks.
 
 | ReAction | Trigger | Use when |
 |---|---|---|
-| Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe CLI-only report on whether a JavaScript/TypeScript project is ready to use Bun. |
+| Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe report on whether a JavaScript/TypeScript project is ready to use Bun, with static fallback when Bun CLI is missing. |
 
 ## Notes
 
 `/ReAction-check-bun-project-health` is inspection-first.
+
+It can run in two modes:
+
+1. Static-only mode:
+   - Bun CLI is missing or unavailable.
+   - The ReAction inspects files and reports partial readiness.
+
+2. Full CLI mode:
+   - Bun CLI is installed.
+   - The ReAction can run safe Bun checks.
 
 It should not migrate a project, delete lockfiles, install dependencies, or rewrite scripts.
 

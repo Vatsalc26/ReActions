@@ -68,9 +68,12 @@ Use /ReAction-check-bun-project-health.
 Check if this JavaScript/TypeScript project is ready to use Bun.
 
 Important:
+- Work even if Bun CLI is not installed.
+- If Bun CLI is missing, do static-only inspection.
 - Do not install dependencies.
+- Do not install Bun.
 - Do not delete lockfiles.
 - Do not modify package.json.
-- Run safe Bun checks only.
+- Run safe Bun checks only if Bun is available.
 - Return the final Bun Project Health Report.
 ```

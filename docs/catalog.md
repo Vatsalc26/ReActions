@@ -45,7 +45,7 @@ Important:
 | [Check Vercel Usage](../reactions/devtools/vercel/check-vercel-usage.reaction.md) | `/ReAction-check-vercel-usage` | intermediate | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md), [Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md) |
 | [Check Vercel Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md) | `/ReAction-check-vercel-deployment-status` | intermediate | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md), [Usage](../reactions/devtools/vercel/check-vercel-usage.reaction.md), [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md) |
 | [Check Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) | `/ReAction-check-vercel-error-logs` | advanced | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static, redaction | [Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md), [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md) |
-| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | `/ReAction-check-bun-project-health` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Vercel Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md), [Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) |
+| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | `/ReAction-check-bun-project-health` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal | [Vercel Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md), [Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) |
 
 ## Frontend / Buttons
 
@@ -83,11 +83,11 @@ Pack guide:
 
 ## DevTools / Bun
 
-Use these ReActions when you want an agent to inspect Bun readiness using CLI-only, safety-aware workflows.
+Use these ReActions when you want an agent to inspect Bun readiness using static inspection and optional CLI checks.
 
 | ReAction | Difficulty | Safety Level | Read Only | Capabilities | Tags |
 |---|---|---|---|---|---|
-| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | intermediate | medium | true | run-commands, read-stdout, read-stderr, inspect-current-directory, read-files, parse-json, parse-text | devtools, bun, javascript, typescript, package-manager, health-check |
+| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | intermediate | medium | true | inspect-current-directory, read-files, parse-json, parse-text, run-commands, read-stdout, read-stderr | devtools, bun, javascript, typescript, package-manager, health-check, static-fallback |
 
 Pack guide:
 

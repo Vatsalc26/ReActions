@@ -560,7 +560,7 @@
       "category": "devtools",
       "subcategory": "bun",
       "path": "reactions/devtools/bun/check-bun-project-health.reaction.md",
-      "summary": "Checks whether a JavaScript or TypeScript project is Bun-ready using CLI-only safe inspection commands, then produces a consistent Bun project health report.",
+      "summary": "Checks whether a JavaScript or TypeScript project is Bun-ready using static inspection and optional safe Bun CLI checks, then produces a consistent Bun project health report.",
       "difficulty": "intermediate",
       "estimated_context_tokens": "8k-14k",
       "supported_frameworks": [
@@ -580,18 +580,18 @@
         "package-json-project"
       ],
       "capabilities": [
-        "run-commands",
-        "read-stdout",
-        "read-stderr",
         "inspect-current-directory",
         "read-files",
         "parse-json",
         "parse-text",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
         "final-report"
       ],
       "verification": [
-        "terminal",
-        "static"
+        "static",
+        "terminal"
       ],
       "safety_level": "medium",
       "read_only": true,
@@ -605,7 +605,8 @@
         "test-runner",
         "bundler",
         "health-check",
-        "cli-only"
+        "cli-only",
+        "static-fallback"
       ],
       "related_reactions": [
         {
