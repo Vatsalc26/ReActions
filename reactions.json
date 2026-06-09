@@ -823,6 +823,77 @@
           "relationship": "next-step"
         }
       ]
+    },
+    {
+      "id": "setup-bun-test-runner",
+      "name": "Setup Bun Test Runner",
+      "trigger": "/ReAction-setup-bun-test-runner",
+      "category": "devtools",
+      "subcategory": "bun",
+      "path": "reactions/devtools/bun/setup-bun-test-runner.reaction.md",
+      "summary": "Safely adds or improves a Bun test setup for a JavaScript or TypeScript project using inspection-first planning, explicit confirmation gates, minimal test files, and verification.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "bun",
+        "javascript",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "hono",
+        "elysia",
+        "package-json-project"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "edit-files",
+        "parse-json",
+        "parse-text",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "bun",
+        "test",
+        "test-runner",
+        "setup",
+        "javascript",
+        "typescript",
+        "package-json",
+        "verification",
+        "confirmation-gates"
+      ],
+      "related_reactions": [
+        {
+          "id": "check-bun-project-health",
+          "relationship": "prerequisite"
+        },
+        {
+          "id": "run-bun-test-and-diagnose",
+          "relationship": "use-with"
+        },
+        {
+          "id": "migrate-project-to-bun",
+          "relationship": "use-with"
+        }
+      ]
     }
   ]
 }

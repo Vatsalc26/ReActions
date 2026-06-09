@@ -10,7 +10,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 |---|---:|---|
 | Frontend / Buttons | 8 | Verified, accessible frontend button patterns. |
 | DevTools / Vercel | 4 | Read-only Vercel analytics, usage, deployment, and log checks. |
-| DevTools / Bun | 4 | Bun runtime, package-manager, test, build, and migration workflows with safety gates. |
+| DevTools / Bun | 5 | Bun runtime, package-manager, test, build, and migration workflows with safety gates. |
 
 ## How to use a ReAction
 
@@ -49,6 +49,7 @@ Important:
 | [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md) | `/ReAction-run-bun-test-and-diagnose` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) |
 | [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) | `/ReAction-migrate-project-to-bun` | advanced | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md) |
 | [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md) | `/ReAction-bun-build-check` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
+| [Setup Bun Test Runner](../reactions/devtools/bun/setup-bun-test-runner.reaction.md) | `/ReAction-setup-bun-test-runner` | advanced | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 
 ## Frontend / Buttons
 
@@ -94,6 +95,7 @@ Use these ReActions when you want an agent to inspect Bun readiness, run Bun tes
 | [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md) | intermediate | medium | true | inspect-current-directory, read-files, parse-json, parse-text, run-commands, read-stdout, read-stderr | devtools, bun, test, test-runner, diagnosis, static-fallback, redaction |
 | [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) | advanced | high | false | inspect-current-directory, read-files, edit-files, parse-json, parse-text, run-commands, read-stdout, read-stderr | devtools, bun, migration, package-manager, lockfiles, confirmation-gates |
 | [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md) | intermediate | medium | true | inspect-current-directory, read-files, parse-json, parse-text, run-commands, read-stdout, read-stderr | devtools, bun, build, bundler, diagnosis, static-fallback, redaction |
+| [Setup Bun Test Runner](../reactions/devtools/bun/setup-bun-test-runner.reaction.md) | advanced | high | false | inspect-current-directory, read-files, edit-files, parse-json, parse-text, run-commands, read-stdout, read-stderr | devtools, bun, test, test-runner, setup, confirmation-gates |
 
 Pack guide:
 

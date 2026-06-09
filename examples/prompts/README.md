@@ -130,3 +130,21 @@ Important:
 - Do not commit generated build output.
 - Return the final Bun Build Check Report.
 ```
+
+## Bun test runner setup example
+
+```txt
+Use /ReAction-setup-bun-test-runner.
+
+Safely add or improve a Bun test setup for this JavaScript/TypeScript project.
+
+Important:
+- Inspect first.
+- Create a setup plan.
+- Ask for confirmation before modifying package.json, creating files, or installing dependencies.
+- Preserve existing test setups and scripts, adding additive scripts (like test:bun) if a test script is already present.
+- Do not delete existing tests.
+- Do not update snapshots.
+- Verify the setup by running bun test if Bun is available.
+- Return the final Bun Test Runner Setup Report.
+```
