@@ -14,6 +14,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 | DevTools / OpenClaw | 1 | First-run setup, Gateway operations, security audit, and channel safety workflows. |
 | DevTools / Hermes Agent | 1 | First-run setup, local chat verification, provider setup, session verification, and safety workflows. |
 | DevTools / OpenHands | 1 | First-run setup, local Agent Canvas or CLI verification, provider setup, sandbox safety, and security workflows. |
+| DevTools / Cline | 1 | Cline CLI first-run setup, TUI verification, permissions review, MCP safety, and automation workflows. |
 
 ## How to use a ReAction
 
@@ -55,8 +56,9 @@ Important:
 | [Setup Bun Test Runner](../reactions/devtools/bun/setup-bun-test-runner.reaction.md) | `/ReAction-setup-bun-test-runner` | advanced | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup Bun CI GitHub Actions](../reactions/devtools/bun/setup-bun-ci-github-actions.reaction.md) | `/ReAction-setup-bun-ci-github-actions` | advanced | Bun, GitHub Actions, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) | `/ReAction-setup-openclaw-first-run` | advanced | OpenClaw, Node.js, npm, pnpm, Bun, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md), [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md) |
-| [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) | `/ReAction-setup-hermes-first-run` | advanced | Hermes Agent, Python, uv, Node.js, Git, Linux, macOS, Windows, WSL2, Termux | static, terminal, manual-review, redaction | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md), [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md) |
-| [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md) | `/ReAction-setup-openhands-first-run` | advanced | OpenHands, Agent Canvas, OpenHands CLI, Python, uv, Node.js, npm, Docker, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md), [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) |
+| [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) | `/ReAction-setup-hermes-first-run` | advanced | Hermes Agent, Python, uv, Node.js, Git, Linux, macOS, Windows, WSL2, Termux | static, terminal, manual-review, redaction | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md), [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md), [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) |
+| [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md) | `/ReAction-setup-openhands-first-run` | advanced | OpenHands, Agent Canvas, OpenHands CLI, Python, uv, Node.js, npm, Docker, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md), [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md), [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) |
+| [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) | `/ReAction-setup-cline-cli-first-run` | advanced | Cline, Cline CLI, Node.js, npm, Windows, macOS, Linux, WSL2 | static, terminal, manual-review, redaction | [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md), [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) |
 
 ## Frontend / Buttons
 
@@ -144,6 +146,18 @@ Use these ReActions when you want an agent to set up, inspect, or harden OpenHan
 Pack guide:
 
 - [OpenHands ReActions README](../reactions/devtools/openhands/README.md)
+
+## DevTools / Cline
+
+Use these ReActions when you want an agent to set up, inspect, or harden Cline CLI workflows with confirmation gates and secret redaction.
+
+| ReAction | Difficulty | Safety Level | Read Only | Capabilities | Tags |
+|---|---|---|---|---|---|
+| [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) | advanced | high | false | inspect-current-directory, read-files, run-commands, read-stdout, read-stderr, ask-confirmation, redact-secrets | devtools, cline, cline-cli, first-run, setup, authentication, tui, provider-setup, auto-approve, security |
+
+Pack guide:
+
+- [Cline ReActions README](../reactions/devtools/cline/README.md)
 
 ## Source of truth
 

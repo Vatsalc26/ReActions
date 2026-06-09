@@ -238,3 +238,29 @@ Important:
 - Return the final OpenHands First-run Setup Report.
 ```
 
+## Cline CLI first-run setup example
+
+```txt
+Use /ReAction-setup-cline-cli-first-run.
+
+Safely help me set up Cline CLI for the first time.
+
+Important:
+- Inspect Node/npm/Cline first.
+- Create a setup plan before installing anything.
+- Ask before running npm install.
+- Ask before running cline auth.
+- Ask before launching the TUI.
+- Do not print API keys or tokens.
+- Do not print full ~/.cline config.
+- Keep auto-approve all off.
+- Do not configure MCP yet.
+- Do not configure hooks/plugins/skills yet.
+- Do not configure cron yet.
+- Do not run headless automation yet.
+- Verify the interactive TUI.
+- Verify one safe non-mutating first task.
+- Return the final Cline CLI First-run Setup Report.
+```
+
+

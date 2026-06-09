@@ -1110,6 +1110,10 @@
         {
           "id": "setup-openhands-first-run",
           "relationship": "alternative"
+        },
+        {
+          "id": "setup-cline-cli-first-run",
+          "relationship": "alternative"
         }
       ]
     },
@@ -1182,6 +1186,79 @@
         },
         {
           "id": "setup-openclaw-first-run",
+          "relationship": "alternative"
+        },
+        {
+          "id": "setup-cline-cli-first-run",
+          "relationship": "alternative"
+        }
+      ]
+    },
+    {
+      "id": "setup-cline-cli-first-run",
+      "name": "Setup Cline CLI First Run",
+      "trigger": "/ReAction-setup-cline-cli-first-run",
+      "category": "devtools",
+      "subcategory": "cline",
+      "path": "reactions/devtools/cline/setup-cline-cli-first-run.reaction.md",
+      "summary": "Safely guides a first-time Cline CLI setup using environment inspection, Node/npm checks, install planning, confirmation gates, authentication, TUI verification, first-task verification, and security reminders.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "14k-24k",
+      "supported_frameworks": [
+        "cline",
+        "cline-cli",
+        "nodejs",
+        "npm",
+        "terminal-ui",
+        "windows",
+        "macos",
+        "linux",
+        "wsl2",
+        "local-workspace"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "parse-json",
+        "parse-text",
+        "ask-confirmation",
+        "redact-secrets",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "cline",
+        "cline-cli",
+        "first-run",
+        "setup",
+        "authentication",
+        "tui",
+        "provider-setup",
+        "auto-approve",
+        "permissions",
+        "mcp",
+        "security",
+        "confirmation-gates",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openhands-first-run",
+          "relationship": "alternative"
+        },
+        {
+          "id": "setup-hermes-first-run",
           "relationship": "alternative"
         }
       ]

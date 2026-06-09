@@ -161,6 +161,14 @@ See [`reactions/devtools/hermes/README.md`](reactions/devtools/hermes/README.md)
 
 See [`reactions/devtools/openhands/README.md`](reactions/devtools/openhands/README.md) for OpenHands ReActions.
 
+### DevTools / Cline
+
+| ReAction | Trigger | Use when |
+|---|---|---|
+| Setup Cline CLI First Run | `/ReAction-setup-cline-cli-first-run` | You want to safely guide a first-time Cline CLI setup through Node/npm checks, install planning, authentication, TUI verification, first-task verification, and security reminders. |
+
+See [`reactions/devtools/cline/README.md`](reactions/devtools/cline/README.md) for Cline ReActions.
+
 
 ## What a ReAction contains
 
@@ -207,6 +215,9 @@ reactions/
       *.reaction.md
       README.md
     openhands/
+      *.reaction.md
+      README.md
+    cline/
       *.reaction.md
       README.md
 
