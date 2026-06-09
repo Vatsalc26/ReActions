@@ -213,3 +213,28 @@ Important:
 - Verify Hermes doctor, first chat, and session resume.
 - Return the final Hermes First-run Setup Report.
 ```
+
+## OpenHands first-run setup example
+
+```txt
+Use /ReAction-setup-openhands-first-run.
+
+Safely help me set up OpenHands for the first time.
+
+Important:
+- Inspect Node, uv, Docker, and OpenHands first.
+- Create a setup plan before installing anything.
+- Choose Agent Canvas or CLI setup based on my intent.
+- Ask for confirmation before running npm, uv, or Docker install/run commands.
+- Ask before running remote installer scripts.
+- Do not print API keys, tokens, or local backend keys.
+- Do not print full settings or expose ~/.openhands secrets/config/history.
+- Keep the server local and do not enable public mode by default.
+- Do not bind to 0.0.0.0 by default.
+- Do not use always-approve or auto-approval.
+- Do not configure MCP or automations (GitHub/Slack/Linear) by default.
+- Avoid broad filesystem mounts (do not mount home directory).
+- Verify the local Agent Canvas backend or CLI and first safe task.
+- Return the final OpenHands First-run Setup Report.
+```
+

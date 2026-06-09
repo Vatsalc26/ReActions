@@ -1026,7 +1026,16 @@
         "confirmation-gates",
         "redaction"
       ],
-      "related_reactions": []
+      "related_reactions": [
+        {
+          "id": "setup-hermes-first-run",
+          "relationship": "alternative"
+        },
+        {
+          "id": "setup-openhands-first-run",
+          "relationship": "alternative"
+        }
+      ]
     },
     {
       "id": "setup-hermes-first-run",
@@ -1094,6 +1103,83 @@
         "redaction"
       ],
       "related_reactions": [
+        {
+          "id": "setup-openclaw-first-run",
+          "relationship": "alternative"
+        },
+        {
+          "id": "setup-openhands-first-run",
+          "relationship": "alternative"
+        }
+      ]
+    },
+    {
+      "id": "setup-openhands-first-run",
+      "name": "Setup OpenHands First Run",
+      "trigger": "/ReAction-setup-openhands-first-run",
+      "category": "devtools",
+      "subcategory": "openhands",
+      "path": "reactions/devtools/openhands/setup-openhands-first-run.reaction.md",
+      "summary": "Safely guides a first-time OpenHands setup using environment inspection, install planning, confirmation gates, Agent Canvas or CLI setup, local verification, first-task verification, and security reminders.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "16k-26k",
+      "supported_frameworks": [
+        "openhands",
+        "agent-canvas",
+        "openhands-cli",
+        "python",
+        "uv",
+        "nodejs",
+        "npm",
+        "docker",
+        "macos",
+        "linux",
+        "windows",
+        "wsl2",
+        "local-backend",
+        "browser-ui",
+        "terminal-ui"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "parse-json",
+        "parse-text",
+        "ask-confirmation",
+        "open-local-dashboard",
+        "redact-secrets",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "openhands",
+        "agent-canvas",
+        "openhands-cli",
+        "first-run",
+        "setup",
+        "local-backend",
+        "provider-setup",
+        "docker",
+        "security",
+        "confirmation-gates",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-hermes-first-run",
+          "relationship": "alternative"
+        },
         {
           "id": "setup-openclaw-first-run",
           "relationship": "alternative"

@@ -153,6 +153,15 @@ See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README
 
 See [`reactions/devtools/hermes/README.md`](reactions/devtools/hermes/README.md) for Hermes Agent ReActions.
 
+### DevTools / OpenHands
+
+| ReAction | Trigger | Use when |
+|---|---|---|
+| Setup OpenHands First Run | `/ReAction-setup-openhands-first-run` | You want to safely guide a first-time OpenHands setup through Agent Canvas or CLI install planning, provider setup, local verification, first-task verification, and security reminders. |
+
+See [`reactions/devtools/openhands/README.md`](reactions/devtools/openhands/README.md) for OpenHands ReActions.
+
+
 ## What a ReAction contains
 
 A `.reaction.md` file is an agent-readable recipe.
@@ -197,6 +206,10 @@ reactions/
     hermes/
       *.reaction.md
       README.md
+    openhands/
+      *.reaction.md
+      README.md
+
 
 docs/
   catalog.md
