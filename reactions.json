@@ -618,6 +618,72 @@
           "relationship": "use-with"
         }
       ]
+    },
+    {
+      "id": "run-bun-test-and-diagnose",
+      "name": "Run Bun Test and Diagnose",
+      "trigger": "/ReAction-run-bun-test-and-diagnose",
+      "category": "devtools",
+      "subcategory": "bun",
+      "path": "reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md",
+      "summary": "Runs Bun tests when available, diagnoses failures, and produces a consistent read-only test diagnosis report with static fallback when Bun CLI is missing.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "bun",
+        "javascript",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "hono",
+        "elysia",
+        "package-json-project"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "redaction"
+      ],
+      "safety_level": "medium",
+      "read_only": true,
+      "tags": [
+        "devtools",
+        "bun",
+        "test",
+        "test-runner",
+        "diagnosis",
+        "javascript",
+        "typescript",
+        "cli-only",
+        "static-fallback",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "check-bun-project-health",
+          "relationship": "prerequisite"
+        },
+        {
+          "id": "check-vercel-error-logs",
+          "relationship": "use-with"
+        }
+      ]
     }
   ]
 }

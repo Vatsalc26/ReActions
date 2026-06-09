@@ -77,3 +77,20 @@ Important:
 - Run safe Bun checks only if Bun is available.
 - Return the final Bun Project Health Report.
 ```
+
+## Bun test diagnosis example
+
+```txt
+Use /ReAction-run-bun-test-and-diagnose.
+
+Run Bun tests and explain any failures.
+
+Important:
+- Work even if Bun CLI is not installed.
+- If Bun CLI is missing, do static-only test setup inspection.
+- Do not install dependencies.
+- Do not install Bun.
+- Do not update snapshots.
+- Do not modify source or test files.
+- Return the final Bun Test Diagnosis Report.
+```
