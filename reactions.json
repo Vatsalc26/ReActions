@@ -753,6 +753,76 @@
           "relationship": "use-with"
         }
       ]
+    },
+    {
+      "id": "bun-build-check",
+      "name": "Bun Build Check",
+      "trigger": "/ReAction-bun-build-check",
+      "category": "devtools",
+      "subcategory": "bun",
+      "path": "reactions/devtools/bun/bun-build-check.reaction.md",
+      "summary": "Checks whether a JavaScript or TypeScript project can build with Bun-related build commands, diagnoses failures, and produces a consistent build report with static fallback when Bun CLI is missing.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "bun",
+        "javascript",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "hono",
+        "elysia",
+        "package-json-project"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "redaction"
+      ],
+      "safety_level": "medium",
+      "read_only": true,
+      "tags": [
+        "devtools",
+        "bun",
+        "build",
+        "bundler",
+        "diagnosis",
+        "javascript",
+        "typescript",
+        "cli-only",
+        "static-fallback",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "check-bun-project-health",
+          "relationship": "prerequisite"
+        },
+        {
+          "id": "run-bun-test-and-diagnose",
+          "relationship": "use-with"
+        },
+        {
+          "id": "migrate-project-to-bun",
+          "relationship": "next-step"
+        }
+      ]
     }
   ]
 }

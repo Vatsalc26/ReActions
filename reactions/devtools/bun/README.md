@@ -9,6 +9,7 @@ This folder contains executable recipes for Bun-related developer tasks.
 | Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe report on whether a JavaScript/TypeScript project is ready to use Bun, with static fallback when Bun CLI is missing. |
 | Run Bun Test and Diagnose | `/ReAction-run-bun-test-and-diagnose` | You want to run Bun tests when available, diagnose failures, and get a read-only test diagnosis report with static fallback when Bun CLI is missing. |
 | Migrate Project to Bun | `/ReAction-migrate-project-to-bun` | You want to safely migrate a JavaScript/TypeScript project to Bun with inspection-first planning, confirmation gates, and verification. |
+| Bun Build Check | `/ReAction-bun-build-check` | You want to check whether a project builds with Bun-related build commands and diagnose build failures with static fallback when Bun CLI is missing. |
 
 ## Notes
 
@@ -88,10 +89,34 @@ Safety defaults:
 - do not rewrite CI automatically
 - do not claim success unless verification is clear
 
+## Build checks
+
+Use `/ReAction-bun-build-check` when you want an agent to check whether a project builds with Bun-related commands.
+
+It can run in two modes:
+
+1. Static-only mode:
+   - Bun CLI is missing or unavailable.
+   - The ReAction inspects build setup and reports what could not be verified.
+
+2. Full CLI mode:
+   - Bun CLI is installed.
+   - The ReAction can run safe build checks.
+
+It must not:
+
+- install Bun
+- install dependencies
+- modify source files
+- modify config files
+- modify package.json
+- delete lockfiles
+- migrate package managers
+- commit generated build output
+
 ## Future Bun ReActions
 
 Possible future additions:
 
 - `/ReAction-setup-bun-test-runner`
 - `/ReAction-convert-node-script-to-bun`
-- `/ReAction-bun-build-check`

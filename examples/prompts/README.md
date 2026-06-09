@@ -112,3 +112,21 @@ Important:
 - Verify with available test/typecheck/lint/build scripts.
 - Return the final Bun Migration Report.
 ```
+
+## Bun build check example
+
+```txt
+Use /ReAction-bun-build-check.
+
+Check whether this JavaScript/TypeScript project builds with Bun-related build commands.
+
+Important:
+- Work even if Bun CLI is not installed.
+- If Bun CLI is missing, do static-only build setup inspection.
+- Do not install dependencies.
+- Do not install Bun.
+- Do not modify source, config, or package.json.
+- Do not delete lockfiles.
+- Do not commit generated build output.
+- Return the final Bun Build Check Report.
+```
