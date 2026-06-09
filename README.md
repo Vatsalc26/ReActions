@@ -145,6 +145,14 @@ See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for B
 
 See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README.md) for OpenClaw ReActions.
 
+### DevTools / Hermes Agent
+
+| ReAction | Trigger | Use when |
+|---|---|---|
+| Setup Hermes First Run | `/ReAction-setup-hermes-first-run` | You want to safely guide a first-time Hermes Agent setup through install planning, provider setup, first-chat verification, session verification, and security reminders. |
+
+See [`reactions/devtools/hermes/README.md`](reactions/devtools/hermes/README.md) for Hermes Agent ReActions.
+
 ## What a ReAction contains
 
 A `.reaction.md` file is an agent-readable recipe.
@@ -184,6 +192,9 @@ reactions/
       *.reaction.md
       README.md
     openclaw/
+      *.reaction.md
+      README.md
+    hermes/
       *.reaction.md
       README.md
 

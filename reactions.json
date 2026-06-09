@@ -1027,6 +1027,78 @@
         "redaction"
       ],
       "related_reactions": []
+    },
+    {
+      "id": "setup-hermes-first-run",
+      "name": "Setup Hermes First Run",
+      "trigger": "/ReAction-setup-hermes-first-run",
+      "category": "devtools",
+      "subcategory": "hermes",
+      "path": "reactions/devtools/hermes/setup-hermes-first-run.reaction.md",
+      "summary": "Safely guides a first-time Hermes Agent setup using environment inspection, install planning, confirmation gates, provider setup, first-chat verification, session verification, and security reminders.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "14k-24k",
+      "supported_frameworks": [
+        "hermes-agent",
+        "python",
+        "uv",
+        "nodejs",
+        "git",
+        "linux",
+        "macos",
+        "windows",
+        "wsl2",
+        "termux",
+        "cli",
+        "tui",
+        "nous-portal",
+        "openrouter",
+        "anthropic",
+        "openai",
+        "custom-endpoint"
+      ],
+      "capabilities": [
+        "inspect-current-directory",
+        "read-files",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "parse-json",
+        "parse-yaml",
+        "parse-text",
+        "ask-confirmation",
+        "redact-secrets",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "hermes",
+        "hermes-agent",
+        "first-run",
+        "setup",
+        "provider-setup",
+        "cli",
+        "tui",
+        "doctor",
+        "session-resume",
+        "security",
+        "confirmation-gates",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openclaw-first-run",
+          "relationship": "alternative"
+        }
+      ]
     }
   ]
 }

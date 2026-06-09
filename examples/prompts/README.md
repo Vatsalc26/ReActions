@@ -190,3 +190,26 @@ Important:
 - Verify gateway status and dashboard.
 - Return the final OpenClaw First-run Setup Report.
 ```
+
+## Hermes Agent first-run setup example
+
+```txt
+Use /ReAction-setup-hermes-first-run.
+
+Safely help me set up Hermes Agent for the first time.
+
+Important:
+- Inspect environment first.
+- Create a setup plan before installing anything.
+- Ask before running install commands.
+- Ask before running remote install scripts.
+- Ask before running provider setup.
+- Do not print API keys or tokens.
+- Do not print ~/.hermes/.env.
+- Do not print full ~/.hermes/config.yaml.
+- Do not enable YOLO mode.
+- Do not disable approval prompts.
+- Do not configure gateway, cron, skills, or MCP yet.
+- Verify Hermes doctor, first chat, and session resume.
+- Return the final Hermes First-run Setup Report.
+```

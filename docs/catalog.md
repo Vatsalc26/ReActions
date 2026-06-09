@@ -12,6 +12,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 | DevTools / Vercel | 4 | Read-only Vercel analytics, usage, deployment, and log checks. |
 | DevTools / Bun | 6 | Bun runtime, package-manager, test, build, migration, test setup, and CI workflows with safety gates. |
 | DevTools / OpenClaw | 1 | First-run setup, Gateway operations, security audit, and channel safety workflows. |
+| DevTools / Hermes Agent | 1 | First-run setup, local chat verification, provider setup, session verification, and safety workflows. |
 
 ## How to use a ReAction
 
@@ -53,6 +54,7 @@ Important:
 | [Setup Bun Test Runner](../reactions/devtools/bun/setup-bun-test-runner.reaction.md) | `/ReAction-setup-bun-test-runner` | advanced | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup Bun CI GitHub Actions](../reactions/devtools/bun/setup-bun-ci-github-actions.reaction.md) | `/ReAction-setup-bun-ci-github-actions` | advanced | Bun, GitHub Actions, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) | `/ReAction-setup-openclaw-first-run` | advanced | OpenClaw, Node.js, npm, pnpm, Bun, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | — |
+| [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) | `/ReAction-setup-hermes-first-run` | advanced | Hermes Agent, Python, uv, Node.js, Git, Linux, macOS, Windows, WSL2, Termux | static, terminal, manual-review, redaction | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) |
 
 ## Frontend / Buttons
 
@@ -116,6 +118,18 @@ Use these ReActions when you want an agent to set up, inspect, or harden OpenCla
 Pack guide:
 
 - [OpenClaw ReActions README](../reactions/devtools/openclaw/README.md)
+
+## DevTools / Hermes Agent
+
+Use these ReActions when you want an agent to set up, inspect, or harden Hermes Agent workflows with confirmation gates and secret redaction.
+
+| ReAction | Difficulty | Safety Level | Read Only | Capabilities | Tags |
+|---|---|---|---|---|---|
+| [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) | advanced | high | false | inspect-current-directory, read-files, run-commands, read-stdout, read-stderr, ask-confirmation, redact-secrets | devtools, hermes, first-run, setup, provider-setup, cli, tui, doctor, security |
+
+Pack guide:
+
+- [Hermes Agent ReActions README](../reactions/devtools/hermes/README.md)
 
 ## Source of truth
 
