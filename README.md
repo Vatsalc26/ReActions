@@ -137,6 +137,14 @@ See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md)
 
 See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for Bun ReActions.
 
+### DevTools / OpenClaw
+
+| ReAction | Trigger | Use when |
+|---|---|---|
+| Setup OpenClaw First Run | `/ReAction-setup-openclaw-first-run` | You want to safely guide a first-time OpenClaw setup through install planning, onboarding, Gateway verification, dashboard verification, and security reminders. |
+
+See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README.md) for OpenClaw ReActions.
+
 ## What a ReAction contains
 
 A `.reaction.md` file is an agent-readable recipe.
@@ -173,6 +181,9 @@ reactions/
       *.reaction.md
       README.md
     bun/
+      *.reaction.md
+      README.md
+    openclaw/
       *.reaction.md
       README.md
 

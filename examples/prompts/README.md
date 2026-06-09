@@ -169,3 +169,24 @@ Important:
 - Only add commands for scripts that exist.
 - Return the final Bun GitHub Actions CI Report.
 ```
+
+## OpenClaw first-run setup example
+
+```txt
+Use /ReAction-setup-openclaw-first-run.
+
+Safely help me set up OpenClaw for the first time.
+
+Important:
+- Inspect Node and OpenClaw first.
+- Create a setup plan before installing anything.
+- Ask before running install commands.
+- Ask before running onboarding.
+- Keep the Gateway local by default.
+- Do not connect channels yet.
+- Do not enable remote access.
+- Do not print API keys or tokens.
+- Do not print full OpenClaw config.
+- Verify gateway status and dashboard.
+- Return the final OpenClaw First-run Setup Report.
+```

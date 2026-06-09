@@ -11,6 +11,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 | Frontend / Buttons | 8 | Verified, accessible frontend button patterns. |
 | DevTools / Vercel | 4 | Read-only Vercel analytics, usage, deployment, and log checks. |
 | DevTools / Bun | 6 | Bun runtime, package-manager, test, build, migration, test setup, and CI workflows with safety gates. |
+| DevTools / OpenClaw | 1 | First-run setup, Gateway operations, security audit, and channel safety workflows. |
 
 ## How to use a ReAction
 
@@ -51,6 +52,7 @@ Important:
 | [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md) | `/ReAction-bun-build-check` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup Bun Test Runner](../reactions/devtools/bun/setup-bun-test-runner.reaction.md) | `/ReAction-setup-bun-test-runner` | advanced | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, terminal, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
 | [Setup Bun CI GitHub Actions](../reactions/devtools/bun/setup-bun-ci-github-actions.reaction.md) | `/ReAction-setup-bun-ci-github-actions` | advanced | Bun, GitHub Actions, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | static, redaction | [Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md), [Run Bun Test and Diagnose](../reactions/devtools/bun/run-bun-test-and-diagnose.reaction.md), [Bun Build Check](../reactions/devtools/bun/bun-build-check.reaction.md), [Migrate Project to Bun](../reactions/devtools/bun/migrate-project-to-bun.reaction.md) |
+| [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) | `/ReAction-setup-openclaw-first-run` | advanced | OpenClaw, Node.js, npm, pnpm, Bun, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | — |
 
 ## Frontend / Buttons
 
@@ -102,6 +104,18 @@ Use these ReActions when you want an agent to inspect Bun readiness, add Bun tes
 Pack guide:
 
 - [Bun ReActions README](../reactions/devtools/bun/README.md)
+
+## DevTools / OpenClaw
+
+Use these ReActions when you want an agent to set up, inspect, or harden OpenClaw workflows with confirmation gates and secret redaction.
+
+| ReAction | Difficulty | Safety Level | Read Only | Capabilities | Tags |
+|---|---|---|---|---|---|
+| [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md) | advanced | high | false | inspect-current-directory, read-files, run-commands, read-stdout, read-stderr, ask-confirmation, redact-secrets | devtools, openclaw, first-run, setup, onboarding, gateway, dashboard, security |
+
+Pack guide:
+
+- [OpenClaw ReActions README](../reactions/devtools/openclaw/README.md)
 
 ## Source of truth
 
