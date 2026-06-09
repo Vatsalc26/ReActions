@@ -552,6 +552,71 @@
         { "id": "check-vercel-deployment-status", "relationship": "prerequisite" },
         { "id": "check-vercel-analytics", "relationship": "do-not-confuse-with" }
       ]
+    },
+    {
+      "id": "check-bun-project-health",
+      "name": "Check Bun Project Health",
+      "trigger": "/ReAction-check-bun-project-health",
+      "category": "devtools",
+      "subcategory": "bun",
+      "path": "reactions/devtools/bun/check-bun-project-health.reaction.md",
+      "summary": "Checks whether a JavaScript or TypeScript project is Bun-ready using CLI-only safe inspection commands, then produces a consistent Bun project health report.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "bun",
+        "javascript",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "vite",
+        "sveltekit",
+        "nuxt",
+        "astro",
+        "remix",
+        "hono",
+        "elysia",
+        "package-json-project"
+      ],
+      "capabilities": [
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "inspect-current-directory",
+        "read-files",
+        "parse-json",
+        "parse-text",
+        "final-report"
+      ],
+      "verification": [
+        "terminal",
+        "static"
+      ],
+      "safety_level": "medium",
+      "read_only": true,
+      "tags": [
+        "devtools",
+        "bun",
+        "javascript",
+        "typescript",
+        "package-manager",
+        "runtime",
+        "test-runner",
+        "bundler",
+        "health-check",
+        "cli-only"
+      ],
+      "related_reactions": [
+        {
+          "id": "check-vercel-deployment-status",
+          "relationship": "use-with"
+        },
+        {
+          "id": "check-vercel-error-logs",
+          "relationship": "use-with"
+        }
+      ]
     }
   ]
 }

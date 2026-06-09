@@ -59,3 +59,18 @@ Use CLI-only read-only commands.
 Do not deploy, redeploy, rollback, promote, or remove anything.
 Return the final deployment status report.
 ```
+
+## Bun project health example
+
+```txt
+Use /ReAction-check-bun-project-health.
+
+Check if this JavaScript/TypeScript project is ready to use Bun.
+
+Important:
+- Do not install dependencies.
+- Do not delete lockfiles.
+- Do not modify package.json.
+- Run safe Bun checks only.
+- Return the final Bun Project Health Report.
+```

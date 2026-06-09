@@ -124,6 +124,14 @@ See [`reactions/frontend/buttons/README.md`](reactions/frontend/buttons/README.m
 
 See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md) for Vercel ReActions.
 
+### DevTools / Bun
+
+| ReAction | Trigger | Use when |
+|---|---|---|
+| Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe CLI-only report on whether a JavaScript/TypeScript project is ready to use Bun. |
+
+See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for Bun ReActions.
+
 ## What a ReAction contains
 
 A `.reaction.md` file is an agent-readable recipe.
@@ -157,6 +165,9 @@ reactions/
 
   devtools/
     vercel/
+      *.reaction.md
+      README.md
+    bun/
       *.reaction.md
       README.md
 

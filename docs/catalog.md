@@ -10,6 +10,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 |---|---:|---|
 | Frontend / Buttons | 8 | Verified, accessible frontend button patterns. |
 | DevTools / Vercel | 4 | Read-only Vercel analytics, usage, deployment, and log checks. |
+| DevTools / Bun | 1 | Bun runtime, package-manager, test, and build health checks. |
 
 ## How to use a ReAction
 
@@ -44,6 +45,7 @@ Important:
 | [Check Vercel Usage](../reactions/devtools/vercel/check-vercel-usage.reaction.md) | `/ReAction-check-vercel-usage` | intermediate | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md), [Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md) |
 | [Check Vercel Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md) | `/ReAction-check-vercel-deployment-status` | intermediate | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md), [Usage](../reactions/devtools/vercel/check-vercel-usage.reaction.md), [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md) |
 | [Check Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) | `/ReAction-check-vercel-error-logs` | advanced | Vercel, Next.js, React, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static, redaction | [Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md), [Analytics](../reactions/devtools/vercel/check-vercel-analytics.reaction.md) |
+| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | `/ReAction-check-bun-project-health` | intermediate | Bun, JavaScript, TypeScript, Node.js, React, Next.js, Vite, SvelteKit, Nuxt, Astro, Remix | terminal, static | [Vercel Deployment Status](../reactions/devtools/vercel/check-vercel-deployment-status.reaction.md), [Vercel Error Logs](../reactions/devtools/vercel/check-vercel-error-logs.reaction.md) |
 
 ## Frontend / Buttons
 
@@ -78,6 +80,18 @@ Use these ReActions when you want an agent to inspect Vercel data using CLI-only
 Pack guide:
 
 * [Vercel ReActions README](../reactions/devtools/vercel/README.md)
+
+## DevTools / Bun
+
+Use these ReActions when you want an agent to inspect Bun readiness using CLI-only, safety-aware workflows.
+
+| ReAction | Difficulty | Safety Level | Read Only | Capabilities | Tags |
+|---|---|---|---|---|---|
+| [Check Bun Project Health](../reactions/devtools/bun/check-bun-project-health.reaction.md) | intermediate | medium | true | run-commands, read-stdout, read-stderr, inspect-current-directory, read-files, parse-json, parse-text | devtools, bun, javascript, typescript, package-manager, health-check |
+
+Pack guide:
+
+- [Bun ReActions README](../reactions/devtools/bun/README.md)
 
 ## Source of truth
 
