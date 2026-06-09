@@ -94,3 +94,21 @@ Important:
 - Do not modify source or test files.
 - Return the final Bun Test Diagnosis Report.
 ```
+
+## Bun migration example
+
+```txt
+Use /ReAction-migrate-project-to-bun.
+
+Safely migrate this JavaScript/TypeScript project to Bun.
+
+Important:
+- Inspect first.
+- Create a migration plan.
+- Ask before running bun install.
+- Ask before deleting old lockfiles.
+- Ask before changing CI.
+- Keep old lockfiles until verification passes unless I explicitly confirm removal.
+- Verify with available test/typecheck/lint/build scripts.
+- Return the final Bun Migration Report.
+```

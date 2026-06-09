@@ -130,6 +130,7 @@ See [`reactions/devtools/vercel/README.md`](reactions/devtools/vercel/README.md)
 |---|---|---|
 | Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe report on whether a JavaScript/TypeScript project is ready to use Bun, with static fallback when Bun CLI is missing. |
 | Run Bun Test and Diagnose | `/ReAction-run-bun-test-and-diagnose` | You want to run Bun tests when available, diagnose failures, and get a read-only report with static fallback when Bun CLI is missing. |
+| Migrate Project to Bun | `/ReAction-migrate-project-to-bun` | You want to safely migrate a JavaScript/TypeScript project to Bun with planning, confirmation gates, and verification. |
 
 See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for Bun ReActions.
 

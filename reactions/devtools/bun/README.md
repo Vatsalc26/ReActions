@@ -8,6 +8,7 @@ This folder contains executable recipes for Bun-related developer tasks.
 |---|---|---|
 | Check Bun Project Health | `/ReAction-check-bun-project-health` | You want a safe report on whether a JavaScript/TypeScript project is ready to use Bun, with static fallback when Bun CLI is missing. |
 | Run Bun Test and Diagnose | `/ReAction-run-bun-test-and-diagnose` | You want to run Bun tests when available, diagnose failures, and get a read-only test diagnosis report with static fallback when Bun CLI is missing. |
+| Migrate Project to Bun | `/ReAction-migrate-project-to-bun` | You want to safely migrate a JavaScript/TypeScript project to Bun with inspection-first planning, confirmation gates, and verification. |
 
 ## Notes
 
@@ -60,11 +61,37 @@ It must not:
 - delete lockfiles
 - change package scripts
 
+## Migration
+
+Use `/ReAction-migrate-project-to-bun` when you want an agent to safely migrate a project to Bun.
+
+This ReAction is not read-only after confirmation, but it is inspection-first.
+
+It must:
+
+- inspect before changing files
+- create a migration plan
+- ask before running `bun install`
+- ask before deleting old lockfiles
+- ask before changing CI
+- verify after migration
+
+Recommended flow:
+
+1. Run `/ReAction-check-bun-project-health`.
+2. Run `/ReAction-run-bun-test-and-diagnose`.
+3. Run `/ReAction-migrate-project-to-bun`.
+
+Safety defaults:
+
+- keep old lockfiles until verification passes
+- do not rewrite CI automatically
+- do not claim success unless verification is clear
+
 ## Future Bun ReActions
 
 Possible future additions:
 
-- `/ReAction-migrate-project-to-bun`
 - `/ReAction-setup-bun-test-runner`
 - `/ReAction-convert-node-script-to-bun`
 - `/ReAction-bun-build-check`
