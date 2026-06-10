@@ -1038,6 +1038,85 @@
       ]
     },
     {
+      "id": "setup-openclaw-peekaboo-first-run",
+      "name": "Setup OpenClaw Peekaboo First Run",
+      "trigger": "/ReAction-setup-openclaw-peekaboo-first-run",
+      "category": "devtools",
+      "subcategory": "openclaw",
+      "path": "reactions/devtools/openclaw/ecosystem/peekaboo/setup-openclaw-peekaboo-first-run.reaction.md",
+      "summary": "Safely guides first-time setup for Peekaboo as an OpenClaw ecosystem Native Tool, including install planning, macOS permission checks, first screenshot verification, first UI inspection verification, optional MCP planning, and security reminders.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "14k-24k",
+      "supported_frameworks": [
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "macos",
+        "homebrew",
+        "npm",
+        "mcp",
+        "codex",
+        "claude-code",
+        "cursor",
+        "screen-recording",
+        "accessibility",
+        "event-synthesizing",
+        "ui-automation",
+        "screenshots"
+      ],
+      "capabilities": [
+        "inspect-operating-system",
+        "inspect-current-directory",
+        "run-commands",
+        "read-stdout",
+        "read-stderr",
+        "detect-cli-availability",
+        "detect-macos-permissions",
+        "ask-confirmation",
+        "capture-safe-screenshot",
+        "inspect-safe-ui-tree",
+        "plan-mcp-config",
+        "redact-secrets",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "permission-check",
+        "screenshot-smoke-test",
+        "ui-inspection-smoke-test",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "first-run",
+        "setup",
+        "macos",
+        "mcp",
+        "screenshots",
+        "ui-inspection",
+        "clicks",
+        "accessibility",
+        "screen-recording",
+        "confirmation-gates",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openclaw-first-run",
+          "relationship": "use-with"
+        }
+      ]
+    },
+    {
       "id": "setup-hermes-first-run",
       "name": "Setup Hermes First Run",
       "trigger": "/ReAction-setup-hermes-first-run",

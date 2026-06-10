@@ -155,6 +155,7 @@ See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for B
 | ReAction | Trigger | Use when |
 |---|---|---|
 | Setup OpenClaw First Run | `/ReAction-setup-openclaw-first-run` | You want to safely guide a first-time OpenClaw setup through install planning, onboarding, Gateway verification, dashboard verification, and security reminders. |
+| Setup OpenClaw Peekaboo First Run | `/ReAction-setup-openclaw-peekaboo-first-run` | Safely set up Peekaboo as an OpenClaw ecosystem Native Tool for macOS screenshots, UI inspection, and MCP planning. |
 
 See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README.md) for OpenClaw ReActions.
 
@@ -252,8 +253,12 @@ reactions/
       *.reaction.md
       README.md
     openclaw/
-      *.reaction.md
+      setup-openclaw-first-run.reaction.md
       README.md
+      ecosystem/
+        peekaboo/
+          setup-openclaw-peekaboo-first-run.reaction.md
+          README.md
     hermes/
       *.reaction.md
       README.md

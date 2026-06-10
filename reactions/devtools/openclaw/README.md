@@ -10,6 +10,13 @@ OpenClaw can connect messaging channels, model providers, local tools, browser/c
 |---|---|---|
 | Setup OpenClaw First Run | `/ReAction-setup-openclaw-first-run` | You want to safely guide a first-time OpenClaw setup through install planning, onboarding, Gateway verification, dashboard verification, and first-run security reminders. |
 
+## Ecosystem Native Tool ReActions
+
+| Tool | ReAction | Trigger | Use when |
+|---|---|---|---|
+| Peekaboo | Setup OpenClaw Peekaboo First Run | `/ReAction-setup-openclaw-peekaboo-first-run` | You want to safely set up Peekaboo, the OpenClaw ecosystem macOS CLI + MCP tool for screenshots, UI inspection, and clicks. |
+
+
 ## Recommended first-run flow
 
 1. Use `/ReAction-setup-openclaw-first-run`.
@@ -17,6 +24,9 @@ OpenClaw can connect messaging channels, model providers, local tools, browser/c
 3. Run a security audit.
 4. Connect one channel only after local dashboard chat works.
 5. Keep remote access off until explicitly needed.
+
+For Native Tools such as Peekaboo, verify the OpenClaw Gateway/dashboard separately from the tool. Peekaboo setup does not require OpenClaw Gateway to be running.
+
 
 ## Safety defaults
 
@@ -43,3 +53,7 @@ Possible future additions:
 - `/ReAction-check-openclaw-sandbox-config`
 - `/ReAction-diagnose-openclaw-channel-connection`
 - `/ReAction-create-openclaw-skill-safely`
+- `/ReAction-check-openclaw-peekaboo-permissions-health`
+- `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test`
+- `/ReAction-check-openclaw-peekaboo-mcp-health`
+- `/ReAction-audit-openclaw-peekaboo-automation-safety`

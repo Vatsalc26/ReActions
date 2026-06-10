@@ -191,6 +191,38 @@ Important:
 - Return the final OpenClaw First-run Setup Report.
 ```
 
+## OpenClaw Peekaboo first-run example
+
+```txt
+Use /ReAction-setup-openclaw-peekaboo-first-run.
+
+Set up Peekaboo safely as an OpenClaw ecosystem Native Tool.
+
+Important:
+- Follow official OpenClaw and Peekaboo docs.
+- Do not click or type by default.
+- Do not run agent actions by default.
+- Confirm before installing.
+- Confirm before opening permission flows.
+- Confirm before screenshots.
+- Use a safe non-private window for screenshot/UI inspection.
+- Do not print secrets, full config, full UI tree, or screenshot contents.
+- Explain MCP setup, but do not edit MCP config unless I explicitly confirm.
+```
+
+## OpenClaw Peekaboo plan-only example
+
+```txt
+Use /ReAction-setup-openclaw-peekaboo-first-run.
+
+Plan how I should install and verify Peekaboo on macOS.
+
+Do not run install commands.
+Do not capture screenshots.
+Do not edit config.
+Just inspect what is safe and give a plan.
+```
+
 ## Hermes Agent first-run setup example
 
 ```txt
