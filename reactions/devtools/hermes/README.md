@@ -9,14 +9,15 @@ Hermes Agent can connect local terminal tools, memory, skills, MCP servers, sche
 | ReAction | Trigger | Use when |
 |---|---|---|
 | Setup Hermes First Run | `/ReAction-setup-hermes-first-run` | You want to safely guide a first-time Hermes Agent setup through install planning, provider setup, first-chat verification, session verification, and security reminders. |
+| Check Hermes Agent Health | `/ReAction-check-hermes-agent-health` | You want to run read-only Hermes diagnostics using `hermes doctor`, provider/model readiness, session checks, gateway status, and redacted security posture checks. |
 
 ## Recommended first-run flow
 
 1. Use `/ReAction-setup-hermes-first-run`.
 2. Verify a local CLI/TUI chat.
-3. Verify `hermes --continue`.
-4. Run a health check.
-5. Run a security audit.
+3. Use `/ReAction-check-hermes-agent-health`.
+4. Verify `hermes --continue` only when safe/confirmed.
+5. Run a security audit if secrets, approvals, gateways, cron, MCP, skills, or remote backends need deeper review.
 6. Configure gateway, cron, skills, MCP, or remote backends only after local chat works.
 
 ## Safety defaults
@@ -42,7 +43,6 @@ Hermes ReActions should:
 
 Possible future additions:
 
-- `/ReAction-check-hermes-agent-health` - After `/ReAction-setup-hermes-first-run`, run `/ReAction-check-hermes-agent-health` to inspect `hermes doctor`, model/provider status, session resume, gateway status, and redacted security posture.
 - `/ReAction-run-hermes-security-audit`
 - `/ReAction-setup-hermes-gateway-safely`
 - `/ReAction-check-hermes-provider-config`

@@ -163,8 +163,18 @@ See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README
 | ReAction | Trigger | Use when |
 |---|---|---|
 | Setup Hermes First Run | `/ReAction-setup-hermes-first-run` | You want to safely guide a first-time Hermes Agent setup through install planning, provider setup, first-chat verification, session verification, and security reminders. |
+| Check Hermes Agent Health | `/ReAction-check-hermes-agent-health` | Run read-only Hermes diagnostics using `hermes doctor`, provider/model readiness, session checks, gateway status, and redacted security posture checks. |
 
 See [`reactions/devtools/hermes/README.md`](reactions/devtools/hermes/README.md) for Hermes Agent ReActions.
+
+Recommended Hermes order:
+
+1. `/ReAction-setup-hermes-first-run`
+2. `/ReAction-check-hermes-agent-health`
+3. security audit
+4. gateway setup
+5. skills/MCP/cron only after local chat works
+
 
 ### DevTools / OpenHands
 

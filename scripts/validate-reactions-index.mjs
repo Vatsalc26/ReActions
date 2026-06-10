@@ -78,7 +78,8 @@ const allowedRelationship = new Set([
   "next-step",
   "do-not-confuse-with",
   "prerequisite",
-  "sibling"
+  "sibling",
+  "follow-up"
 ]);
 
 // Build index set of all reaction IDs first for reference checks

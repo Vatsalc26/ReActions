@@ -214,6 +214,35 @@ Important:
 - Return the final Hermes First-run Setup Report.
 ```
 
+## Hermes health-check example
+
+```txt
+Use /ReAction-check-hermes-agent-health.
+
+Run a read-only Hermes health check.
+
+Important:
+- Do not install anything.
+- Do not run setup.
+- Do not switch providers.
+- Do not configure gateway.
+- Do not enable YOLO.
+- Do not print secrets or full config.
+- Check `hermes --version`, `hermes doctor`, provider/model readiness, sessions, and gateway status if safe.
+- Return a health report with safe next steps.
+```
+
+## Hermes doctor-only example
+
+```txt
+Use /ReAction-check-hermes-agent-health.
+
+Only run `hermes doctor` and summarize the warnings/errors.
+
+Do not make any changes.
+Do not print secrets.
+```
+
 ## OpenHands first-run setup example
 
 ```txt

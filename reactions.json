@@ -1958,6 +1958,67 @@
           "relationship": "sibling"
         }
       ]
+    },
+    {
+      "id": "check-hermes-agent-health",
+      "name": "Check Hermes Agent Health",
+      "trigger": "/ReAction-check-hermes-agent-health",
+      "category": "devtools",
+      "subcategory": "hermes",
+      "path": "reactions/devtools/hermes/check-hermes-agent-health.reaction.md",
+      "summary": "Runs a read-only Hermes Agent health check using CLI availability, doctor output, provider/model status, session resume, gateway status, and redacted security posture checks.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "hermes-agent",
+        "nous-portal",
+        "local-cli",
+        "tui",
+        "gateway-status",
+        "provider-diagnostics",
+        "session-diagnostics"
+      ],
+      "capabilities": [
+        "inspect-command-availability",
+        "run-read-only-terminal-commands",
+        "interpret-hermes-doctor",
+        "check-provider-model-status",
+        "check-session-resume",
+        "check-gateway-status-read-only",
+        "redact-secrets",
+        "produce-health-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "secret-redaction-check",
+        "read-only-safety-check",
+        "doctor-output-review"
+      ],
+      "safety_level": "high",
+      "read_only": true,
+      "tags": [
+        "devtools",
+        "hermes",
+        "hermes-agent",
+        "health-check",
+        "doctor",
+        "provider",
+        "model",
+        "sessions",
+        "gateway-status",
+        "read-only",
+        "security",
+        "secret-redaction",
+        "local-cli-first"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-hermes-first-run",
+          "relationship": "follow-up"
+        }
+      ]
     }
   ]
 }
