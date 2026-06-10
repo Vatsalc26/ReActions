@@ -254,6 +254,42 @@ Check permissions first.
 If Screen Recording or Accessibility is missing, explain what is missing and ask before running any permission grant command.
 ```
 
+## OpenClaw Peekaboo UI capture smoke test example
+
+```txt
+Use /ReAction-run-openclaw-peekaboo-ui-capture-smoke-test.
+
+Run a safe Peekaboo observation smoke test.
+
+Important:
+- Follow official Peekaboo docs.
+- Do not install anything.
+- Do not grant permissions.
+- Ask before screenshot capture.
+- Ask before UI inspection.
+- Use a safe non-private window.
+- Prefer frontmost or app-targeted capture over whole-screen capture.
+- Do not display screenshot contents.
+- Do not dump full UI tree.
+- Do not click, type, paste, hotkey, press, scroll, or drag.
+- Do not run agent actions.
+- Do not edit MCP config.
+- Return a smoke-test report with paths and safe summaries only.
+```
+
+## OpenClaw Peekaboo screenshot-only smoke test example
+
+```txt
+Use /ReAction-run-openclaw-peekaboo-ui-capture-smoke-test.
+
+Only test `peekaboo image --mode frontmost`.
+
+I will switch to a safe non-private window first.
+
+Do not run `peekaboo see`.
+Do not click or type.
+```
+
 ## Hermes Agent first-run setup example
 
 ```txt

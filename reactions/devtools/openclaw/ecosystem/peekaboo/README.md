@@ -14,14 +14,15 @@ They help agents safely install, verify, inspect, and use Peekaboo while protect
 |---|---|---|
 | Setup OpenClaw Peekaboo First Run | `/ReAction-setup-openclaw-peekaboo-first-run` | You want to safely guide first-time Peekaboo setup through install planning, permission checks, first screenshot verification, first UI inspection verification, optional MCP planning, and security reminders. |
 | Check OpenClaw Peekaboo Permissions Health | `/ReAction-check-openclaw-peekaboo-permissions-health` | You want to check Screen Recording, Accessibility, Event Synthesizing, Bridge/local source differences, and readiness for screenshots, UI inspection, OpenClaw subprocess use, MCP, and future automation. |
+| Run OpenClaw Peekaboo UI Capture Smoke Test | `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test` | You want to safely verify Peekaboo screenshots and UI inspection using a user-approved non-private window, without clicking, typing, running agents, or editing MCP config. |
 
 ## Recommended first-run flow
 
 1. Use `/ReAction-setup-openclaw-peekaboo-first-run`.
 2. Use `/ReAction-check-openclaw-peekaboo-permissions-health`.
-3. Verify observation with `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test`.
-4. Configure MCP with `/ReAction-check-openclaw-peekaboo-mcp-health`.
-5. Audit safety before click/type/agent automation with `/ReAction-audit-openclaw-peekaboo-automation-safety`.
+3. Use `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test`.
+4. Use `/ReAction-check-openclaw-peekaboo-mcp-health` if the user wants MCP integration.
+5. Use `/ReAction-audit-openclaw-peekaboo-automation-safety` before click/type/agent automation.
 
 ## Safety defaults
 
@@ -45,7 +46,6 @@ Peekaboo ReActions should:
 
 Possible future additions:
 
-- `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test`
 - `/ReAction-run-openclaw-peekaboo-safe-click-type-smoke-test`
 - `/ReAction-check-openclaw-peekaboo-mcp-health`
 - `/ReAction-debug-openclaw-peekaboo-element-not-found`

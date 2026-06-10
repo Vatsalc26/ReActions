@@ -1192,6 +1192,84 @@
       ]
     },
     {
+      "id": "run-openclaw-peekaboo-ui-capture-smoke-test",
+      "name": "Run OpenClaw Peekaboo UI Capture Smoke Test",
+      "trigger": "/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test",
+      "category": "devtools",
+      "subcategory": "openclaw",
+      "path": "reactions/devtools/openclaw/ecosystem/peekaboo/run-openclaw-peekaboo-ui-capture-smoke-test.reaction.md",
+      "summary": "Safely verifies Peekaboo screenshots and UI inspection using a user-approved non-private window, frontmost/app-targeted capture, optional annotation, and strict privacy guardrails before any click/type/agent automation.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "macos",
+        "screen-recording",
+        "accessibility",
+        "screenshots",
+        "ui-inspection",
+        "annotated-ui-map",
+        "json-output",
+        "safe-smoke-test"
+      ],
+      "capabilities": [
+        "inspect-operating-system",
+        "run-terminal-commands",
+        "detect-cli-availability",
+        "check-permission-status",
+        "ask-confirmation",
+        "capture-safe-screenshot",
+        "inspect-safe-ui-tree",
+        "parse-json-summary",
+        "redact-private-ui-text",
+        "produce-smoke-test-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "screenshot-smoke-test",
+        "ui-inspection-smoke-test",
+        "privacy-check",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "ui-capture",
+        "screenshots",
+        "ui-inspection",
+        "see",
+        "image",
+        "annotate",
+        "json",
+        "macos",
+        "screen-recording",
+        "accessibility",
+        "privacy",
+        "smoke-test",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openclaw-peekaboo-first-run",
+          "relationship": "follow-up"
+        },
+        {
+          "id": "check-openclaw-peekaboo-permissions-health",
+          "relationship": "follow-up"
+        }
+      ]
+    },
+    {
       "id": "setup-hermes-first-run",
       "name": "Setup Hermes First Run",
       "trigger": "/ReAction-setup-hermes-first-run",
