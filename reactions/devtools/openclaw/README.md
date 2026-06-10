@@ -18,6 +18,7 @@ OpenClaw can connect messaging channels, model providers, local tools, browser/c
 | Peekaboo | Check OpenClaw Peekaboo Permissions Health | `/ReAction-check-openclaw-peekaboo-permissions-health` | You want to check Peekaboo macOS permission readiness for screenshots, UI inspection, OpenClaw subprocess use, MCP, and future desktop automation. |
 | Peekaboo | Run OpenClaw Peekaboo UI Capture Smoke Test | `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test` | You want to safely verify screenshot capture and UI inspection with Peekaboo before any click/type/agent automation. |
 | Peekaboo | Check OpenClaw Peekaboo MCP Health | `/ReAction-check-openclaw-peekaboo-mcp-health` | You want to verify Peekaboo MCP readiness, stdio transport, npm/local-binary client config, tool exposure, permissions, and redacted config safety. |
+| Peekaboo | Setup OpenClaw Peekaboo MCP Client | `/ReAction-setup-openclaw-peekaboo-mcp-client` | You want to safely add Peekaboo to an MCP client using official stdio config, npm or local-binary launch, config backup, and secret redaction. |
 
 
 ## Recommended first-run flow

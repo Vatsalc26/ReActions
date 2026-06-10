@@ -1365,6 +1365,106 @@
       ]
     },
     {
+      "id": "setup-openclaw-peekaboo-mcp-client",
+      "name": "Setup OpenClaw Peekaboo MCP Client",
+      "trigger": "/ReAction-setup-openclaw-peekaboo-mcp-client",
+      "category": "devtools",
+      "subcategory": "openclaw",
+      "path": "reactions/devtools/openclaw/ecosystem/peekaboo/setup-openclaw-peekaboo-mcp-client.reaction.md",
+      "summary": "Safely configures an MCP client to launch Peekaboo as an OpenClaw ecosystem Native Tool over stdio, using official npm or local-binary config shapes, permission checks, config backup, redaction, and confirmation gates.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "12k-20k",
+      "supported_frameworks": [
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "mcp",
+        "stdio",
+        "codex",
+        "claude-code",
+        "cursor",
+        "macos",
+        "npm",
+        "npx",
+        "local-binary",
+        "json-config",
+        "screen-recording",
+        "accessibility",
+        "secret-redaction"
+      ],
+      "capabilities": [
+        "inspect-operating-system",
+        "run-read-only-terminal-commands",
+        "detect-cli-availability",
+        "detect-mcp-command-availability",
+        "check-permission-status",
+        "generate-mcp-client-config",
+        "parse-mcp-config",
+        "patch-json-config-safely",
+        "preserve-existing-mcp-servers",
+        "create-config-backup",
+        "validate-json",
+        "detect-secret-exposure",
+        "ask-confirmation",
+        "redact-secrets",
+        "produce-mcp-setup-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "mcp-config-check",
+        "stdio-transport-check",
+        "json-validation",
+        "config-backup-check",
+        "secret-redaction-check",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": false,
+      "tags": [
+        "devtools",
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "mcp",
+        "setup",
+        "stdio",
+        "codex",
+        "claude-code",
+        "cursor",
+        "npm",
+        "npx",
+        "local-binary",
+        "config",
+        "json",
+        "backup",
+        "permissions",
+        "security",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openclaw-peekaboo-first-run",
+          "relationship": "follow-up"
+        },
+        {
+          "id": "check-openclaw-peekaboo-permissions-health",
+          "relationship": "follow-up"
+        },
+        {
+          "id": "run-openclaw-peekaboo-ui-capture-smoke-test",
+          "relationship": "follow-up"
+        },
+        {
+          "id": "check-openclaw-peekaboo-mcp-health",
+          "relationship": "follow-up"
+        }
+      ]
+    },
+    {
       "id": "setup-hermes-first-run",
       "name": "Setup Hermes First Run",
       "trigger": "/ReAction-setup-hermes-first-run",

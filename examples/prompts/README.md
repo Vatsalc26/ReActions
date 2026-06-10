@@ -324,7 +324,49 @@ Do not run commands.
 Do not edit files.
 Tell me if it uses the official stdio npm launch shape and whether any secrets are exposed.
 
-<config snippet here>
+## OpenClaw Peekaboo MCP client setup example
+
+```txt
+Use /ReAction-setup-openclaw-peekaboo-mcp-client.
+
+Set up Peekaboo in my MCP client safely.
+
+Important:
+- Follow official Peekaboo MCP docs.
+- Ask which client I use.
+- Prefer the official npm config unless I choose local binary.
+- Use stdio transport.
+- Do not configure HTTP/SSE.
+- Do not edit config until I confirm.
+- Back up the config before writing.
+- Preserve all existing MCP servers.
+- Redact all secrets and env values.
+- Do not run screenshots, UI actions, or agent tasks.
+- Return a setup report and restart/list-tools steps.
+```
+
+## OpenClaw Peekaboo MCP snippet-only example
+
+```txt
+Use /ReAction-setup-openclaw-peekaboo-mcp-client.
+
+Give me the official MCP config snippet for Peekaboo using npm.
+
+Do not read or edit any files.
+Do not run commands.
+```
+
+## OpenClaw Peekaboo local binary MCP setup example
+
+```txt
+Use /ReAction-setup-openclaw-peekaboo-mcp-client.
+
+I am testing a local Peekaboo checkout.
+
+Help me set up MCP using an absolute local binary path.
+
+Do not edit config until I confirm.
+Check that the binary path is absolute and executable.
 ```
 
 ## Hermes Agent first-run setup example
