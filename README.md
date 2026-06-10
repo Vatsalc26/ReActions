@@ -188,9 +188,11 @@ See [`reactions/devtools/cline/README.md`](reactions/devtools/cline/README.md) f
 |---|---|---|
 | NCERT Class 8 Science Tutor Responsibility | `/ReAction-assume-ncert-class-8-science-tutor-responsibility` | You want an agent to tutor Class 8 Science using only NCERT textbook material, NCERT-based teacher notes, or NCERT-based student notes. |
 | NCERT Class 8 Hindi Tutor Responsibility | `/ReAction-assume-ncert-class-8-hindi-tutor-responsibility` | You want an agent to tutor Class 8 Hindi using only NCERT Hindi textbook material, NCERT-based teacher notes, or NCERT-based student notes. |
+| NCERT Class 8 English Tutor Responsibility | `/ReAction-assume-ncert-class-8-english-tutor-responsibility` | You want an agent to tutor Class 8 English using only NCERT English textbook material, NCERT-based teacher notes, or NCERT-based student notes. |
 
 See [`reactions/responsibilities/education/india/ncert/class-8-science/README.md`](reactions/responsibilities/education/india/ncert/class-8-science/README.md) for NCERT Class 8 Science Tutor Responsibilities.
 See [`reactions/responsibilities/education/india/ncert/class-8-hindi/README.md`](reactions/responsibilities/education/india/ncert/class-8-hindi/README.md) for NCERT Class 8 Hindi Tutor Responsibilities.
+See [`reactions/responsibilities/education/india/ncert/class-8-english/README.md`](reactions/responsibilities/education/india/ncert/class-8-english/README.md) for NCERT Class 8 English Tutor Responsibilities.
 
 
 ## What a ReAction contains
@@ -251,6 +253,9 @@ reactions/
             *.reaction.md
             README.md
           class-8-hindi/
+            *.reaction.md
+            README.md
+          class-8-english/
             *.reaction.md
             README.md
 

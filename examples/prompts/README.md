@@ -348,5 +348,47 @@ These are my teacher's notes based on NCERT. Explain them simply.
 <teacher notes here>
 ```
 
+## NCERT Class 8 English strict-source tutor example
+
+```txt
+Use /ReAction-assume-ncert-class-8-english-tutor-responsibility.
+
+I will paste my NCERT Class 8 English paragraph below.
+
+Explain it in simple English.
+
+Important:
+- Answer only from the source I provide.
+- Keep it Class 8 level.
+- Ask one quick check question.
+- Give 3 source-grounded practice questions.
+- Do not add outside summaries or internet facts.
+
+<source here>
+```
+
+## NCERT Class 8 English source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-english-tutor-responsibility.
+
+Explain this chapter to me.
+
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download the relevant Class 8 English material from the official NCERT textbook PDF page or ePathshala before explaining the content.
+
+## NCERT Class 8 English teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-english-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain them simply.
+
+<teacher notes here>
+```
+
 
 
