@@ -15,6 +15,7 @@ OpenClaw can connect messaging channels, model providers, local tools, browser/c
 | Tool | ReAction | Trigger | Use when |
 |---|---|---|---|
 | Peekaboo | Setup OpenClaw Peekaboo First Run | `/ReAction-setup-openclaw-peekaboo-first-run` | You want to safely set up Peekaboo, the OpenClaw ecosystem macOS CLI + MCP tool for screenshots, UI inspection, and clicks. |
+| Peekaboo | Check OpenClaw Peekaboo Permissions Health | `/ReAction-check-openclaw-peekaboo-permissions-health` | You want to check Peekaboo macOS permission readiness for screenshots, UI inspection, OpenClaw subprocess use, MCP, and future desktop automation. |
 
 
 ## Recommended first-run flow
@@ -53,7 +54,6 @@ Possible future additions:
 - `/ReAction-check-openclaw-sandbox-config`
 - `/ReAction-diagnose-openclaw-channel-connection`
 - `/ReAction-create-openclaw-skill-safely`
-- `/ReAction-check-openclaw-peekaboo-permissions-health`
 - `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test`
 - `/ReAction-check-openclaw-peekaboo-mcp-health`
 - `/ReAction-audit-openclaw-peekaboo-automation-safety`

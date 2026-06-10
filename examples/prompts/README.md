@@ -223,6 +223,37 @@ Do not edit config.
 Just inspect what is safe and give a plan.
 ```
 
+## OpenClaw Peekaboo permissions health example
+
+```txt
+Use /ReAction-check-openclaw-peekaboo-permissions-health.
+
+Run a read-only Peekaboo permissions health check.
+
+Important:
+- Follow official Peekaboo docs.
+- Do not install anything.
+- Do not capture screenshots by default.
+- Do not inspect private UI.
+- Do not click, type, paste, hotkey, press, scroll, or drag.
+- Do not run agent actions.
+- Check `peekaboo permissions status`.
+- Check `peekaboo permissions status --all-sources`.
+- Tell me whether Screen Recording, Accessibility, and Event Synthesizing are ready.
+- Tell me if Bridge/local CLI permissions differ.
+- Return a readiness matrix for screenshots, UI inspection, MCP, OpenClaw subprocess use, and future background input.
+```
+
+## OpenClaw Peekaboo permission grant guidance example
+
+```txt
+Use /ReAction-check-openclaw-peekaboo-permissions-health.
+
+Check permissions first.
+
+If Screen Recording or Accessibility is missing, explain what is missing and ask before running any permission grant command.
+```
+
 ## Hermes Agent first-run setup example
 
 ```txt

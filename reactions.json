@@ -1117,6 +1117,81 @@
       ]
     },
     {
+      "id": "check-openclaw-peekaboo-permissions-health",
+      "name": "Check OpenClaw Peekaboo Permissions Health",
+      "trigger": "/ReAction-check-openclaw-peekaboo-permissions-health",
+      "category": "devtools",
+      "subcategory": "openclaw",
+      "path": "reactions/devtools/openclaw/ecosystem/peekaboo/check-openclaw-peekaboo-permissions-health.reaction.md",
+      "summary": "Runs a read-only macOS permission health check for Peekaboo as an OpenClaw ecosystem Native Tool, covering Screen Recording, Accessibility, Event Synthesizing, Bridge/local source differences, and readiness for screenshots, UI inspection, MCP, and future automation.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "macos",
+        "screen-recording",
+        "accessibility",
+        "event-synthesizing",
+        "peekaboo-bridge",
+        "node-subprocess",
+        "mcp",
+        "screenshots",
+        "ui-inspection"
+      ],
+      "capabilities": [
+        "inspect-operating-system",
+        "run-read-only-terminal-commands",
+        "detect-cli-availability",
+        "detect-macos-permissions",
+        "parse-permission-status",
+        "compare-permission-sources",
+        "detect-bridge-local-mismatch",
+        "classify-permission-readiness",
+        "ask-confirmation",
+        "redact-secrets",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "terminal",
+        "manual-review",
+        "permission-check",
+        "all-sources-permission-check",
+        "bridge-local-mismatch-check",
+        "redaction"
+      ],
+      "safety_level": "high",
+      "read_only": true,
+      "tags": [
+        "devtools",
+        "openclaw",
+        "openclaw-ecosystem",
+        "peekaboo",
+        "native-tools",
+        "permissions",
+        "macos",
+        "screen-recording",
+        "accessibility",
+        "event-synthesizing",
+        "bridge",
+        "node-subprocess",
+        "mcp",
+        "screenshots",
+        "ui-inspection",
+        "read-only",
+        "redaction"
+      ],
+      "related_reactions": [
+        {
+          "id": "setup-openclaw-peekaboo-first-run",
+          "relationship": "follow-up"
+        }
+      ]
+    },
+    {
       "id": "setup-hermes-first-run",
       "name": "Setup Hermes First Run",
       "trigger": "/ReAction-setup-hermes-first-run",
