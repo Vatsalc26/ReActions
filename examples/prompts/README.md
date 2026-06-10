@@ -390,5 +390,45 @@ These are my teacher's notes based on NCERT. Explain them simply.
 <teacher notes here>
 ```
 
+## NCERT Class 8 Mathematics strict-source tutor example
 
+```txt
+Use /ReAction-assume-ncert-class-8-math-tutor-responsibility.
 
+I will paste my NCERT Class 8 Mathematics question below.
+
+Solve it step by step in Hinglish.
+
+Important:
+- Answer only from the source I provide.
+- Show every step and reasoning.
+- Do not give final answer only.
+- Check arithmetic carefully.
+- Ask one quick check question.
+- Give 2 similar practice questions.
+
+<source here>
+```
+
+## NCERT Class 8 Mathematics source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-math-tutor-responsibility.
+
+Explain the pythagorean theorem to me.
+
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download the relevant Class 8 Mathematics material from the official NCERT textbook PDF page or ePathshala before explaining the content.
+
+## NCERT Class 8 Mathematics teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-math-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain the steps simply.
+
+<teacher notes here>
+```

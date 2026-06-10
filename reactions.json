@@ -1338,6 +1338,10 @@
         {
           "id": "assume-ncert-class-8-english-tutor-responsibility",
           "relationship": "sibling"
+        },
+        {
+          "id": "assume-ncert-class-8-math-tutor-responsibility",
+          "relationship": "sibling"
         }
       ]
     },
@@ -1416,6 +1420,10 @@
         },
         {
           "id": "assume-ncert-class-8-english-tutor-responsibility",
+          "relationship": "sibling"
+        },
+        {
+          "id": "assume-ncert-class-8-math-tutor-responsibility",
           "relationship": "sibling"
         }
       ]
@@ -1500,6 +1508,99 @@
         },
         {
           "id": "assume-ncert-class-8-hindi-tutor-responsibility",
+          "relationship": "sibling"
+        },
+        {
+          "id": "assume-ncert-class-8-math-tutor-responsibility",
+          "relationship": "sibling"
+        }
+      ]
+    },
+    {
+      "id": "assume-ncert-class-8-math-tutor-responsibility",
+      "name": "Assume NCERT Class 8 Mathematics Tutor Responsibility",
+      "trigger": "/ReAction-assume-ncert-class-8-math-tutor-responsibility",
+      "category": "responsibilities",
+      "subcategory": "education-india-ncert",
+      "path": "reactions/responsibilities/education/india/ncert/class-8-math/assume-ncert-class-8-math-tutor-responsibility.reaction.md",
+      "summary": "Makes an agent behave as a strict-source, safe, patient Mathematics tutor for Indian Class 8 students using only provided NCERT Mathematics textbook material, NCERT-based teacher notes, or NCERT-based student notes.",
+      "difficulty": "advanced",
+      "estimated_context_tokens": "10k-18k",
+      "supported_frameworks": [
+        "education",
+        "india",
+        "ncert",
+        "class-8",
+        "mathematics",
+        "math",
+        "teacher-notes",
+        "student-notes",
+        "cbse",
+        "step-by-step-solving",
+        "geometry",
+        "word-problems",
+        "hindi",
+        "hinglish",
+        "student-tutoring"
+      ],
+      "capabilities": [
+        "identify-source-presence",
+        "classify-source-type",
+        "detect-source-sufficiency",
+        "understand-user-question",
+        "ask-clarifying-questions",
+        "read-provided-source",
+        "preserve-equations-and-symbols",
+        "explain-from-source-only",
+        "solve-step-by-step",
+        "check-arithmetic",
+        "generate-source-grounded-practice-questions",
+        "check-understanding",
+        "identify-teacher-escalation-cases",
+        "redact-personal-data",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "manual-review",
+        "safety-check",
+        "source-awareness",
+        "teacher-escalation-check",
+        "step-by-step-verification",
+        "arithmetic-check"
+      ],
+      "safety_level": "high",
+      "read_only": true,
+      "tags": [
+        "responsibilities",
+        "education",
+        "india",
+        "ncert",
+        "class-8",
+        "mathematics",
+        "math",
+        "strict-source",
+        "teacher-notes",
+        "student-notes",
+        "homework-help",
+        "exam-revision",
+        "step-by-step",
+        "student-safety",
+        "minor-privacy",
+        "teacher-escalation",
+        "hinglish"
+      ],
+      "related_reactions": [
+        {
+          "id": "assume-ncert-class-8-science-tutor-responsibility",
+          "relationship": "sibling"
+        },
+        {
+          "id": "assume-ncert-class-8-hindi-tutor-responsibility",
+          "relationship": "sibling"
+        },
+        {
+          "id": "assume-ncert-class-8-english-tutor-responsibility",
           "relationship": "sibling"
         }
       ]
