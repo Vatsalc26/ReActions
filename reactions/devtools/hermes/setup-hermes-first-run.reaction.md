@@ -104,6 +104,39 @@ Known commands include:
 { "command": "hermes", "args": ["gateway", "status"] }
 ```
 
+## Provider-neutral First-run Stance
+
+This ReAction should stay provider-neutral by default.
+
+`hermes setup --portal` is a useful fast path for users who want the Nous Portal/OAuth setup experience, but it must not be treated as the only recommended path.
+
+The agent should present setup options neutrally:
+
+```txt
+1. `hermes setup` for the standard setup wizard.
+2. `hermes model` for bring-your-own provider/model configuration.
+3. `hermes setup --portal` for users who explicitly want the Nous Portal quick path.
+```
+
+Default success is still:
+
+```txt
+A plain local Hermes CLI/TUI chat works reliably.
+```
+
+Not:
+
+```txt
+Gateway connected.
+Tools configured.
+Skills installed.
+MCP configured.
+Cron enabled.
+Remote backend enabled.
+```
+
+Gateway, tools, skills, MCP, cron, and remote backends should remain follow-up workflows after local chat is verified.
+
 Official install options include:
 
 Linux / macOS / WSL2 / Termux:
@@ -713,13 +746,15 @@ Choose setup path:
 
    * `hermes setup --portal`
    * use only after confirmation
-   * good path for users who want OAuth/provider/tool gateway without collecting separate keys
+   * useful for users who want the Nous Portal/OAuth quick path
+   * not required for provider-neutral first-run success
 
 4. Bring-your-own provider:
 
    * `hermes model`
    * user enters provider keys/OAuth directly into Hermes flow
    * do not ask user to paste secrets into chat
+   * keep this path equally valid with portal setup
 
 5. Source checkout:
 
@@ -1419,6 +1454,16 @@ Rules:
 * Use `blocked` when prerequisites or confirmation are missing.
 * Use `failed` when setup was attempted and failed.
 * Keep output concise.
+
+Recommended follow-up after first successful local chat:
+
+```txt
+/ReAction-check-hermes-agent-health
+```
+
+Use the health-check ReAction for `hermes doctor`, provider/model verification, session checks, gateway status checks, and redacted config/security review.
+
+Do not expand first-run setup into a full health/audit workflow.
 
 ---
 

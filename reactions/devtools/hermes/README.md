@@ -42,7 +42,7 @@ Hermes ReActions should:
 
 Possible future additions:
 
-- `/ReAction-check-hermes-agent-health`
+- `/ReAction-check-hermes-agent-health` - After `/ReAction-setup-hermes-first-run`, run `/ReAction-check-hermes-agent-health` to inspect `hermes doctor`, model/provider status, session resume, gateway status, and redacted security posture.
 - `/ReAction-run-hermes-security-audit`
 - `/ReAction-setup-hermes-gateway-safely`
 - `/ReAction-check-hermes-provider-config`
