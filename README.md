@@ -158,6 +158,7 @@ See [`reactions/devtools/bun/README.md`](reactions/devtools/bun/README.md) for B
 | Setup OpenClaw Peekaboo First Run | `/ReAction-setup-openclaw-peekaboo-first-run` | Safely set up Peekaboo as an OpenClaw ecosystem Native Tool for macOS screenshots, UI inspection, and MCP planning. |
 | Check OpenClaw Peekaboo Permissions Health | `/ReAction-check-openclaw-peekaboo-permissions-health` | Check Peekaboo macOS permissions and Bridge/local source readiness for screenshots, UI inspection, OpenClaw subprocess use, MCP, and future automation. |
 | Run OpenClaw Peekaboo UI Capture Smoke Test | `/ReAction-run-openclaw-peekaboo-ui-capture-smoke-test` | Safely verify Peekaboo screenshot capture and UI inspection using a user-approved non-private window before any automation. |
+| Check OpenClaw Peekaboo MCP Health | `/ReAction-check-openclaw-peekaboo-mcp-health` | Safely verify Peekaboo MCP readiness, stdio launch config, npm/local-binary setup, tool exposure, permissions, and redacted config safety. |
 
 See [`reactions/devtools/openclaw/README.md`](reactions/devtools/openclaw/README.md) for OpenClaw ReActions.
 

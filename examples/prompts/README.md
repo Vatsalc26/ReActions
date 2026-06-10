@@ -290,6 +290,43 @@ Do not run `peekaboo see`.
 Do not click or type.
 ```
 
+## OpenClaw Peekaboo MCP health example
+
+```txt
+Use /ReAction-check-openclaw-peekaboo-mcp-health.
+
+Run a read-only Peekaboo MCP health check.
+
+Important:
+- Follow official Peekaboo MCP docs.
+- Do not install anything.
+- Do not edit MCP config.
+- Do not start a long-running MCP server unless I confirm.
+- Do not run screenshots or UI actions.
+- Do not click, type, paste, hotkey, press, scroll, or drag.
+- Do not run agent actions.
+- Check `peekaboo mcp --help`.
+- Check `peekaboo tools`.
+- Check permissions.
+- Review MCP config shape only if I provide it or confirm the path.
+- Redact all secrets and full configs.
+- Return an MCP health report.
+```
+
+## OpenClaw Peekaboo MCP config review example
+
+```txt
+Use /ReAction-check-openclaw-peekaboo-mcp-health.
+
+Review this Peekaboo MCP config snippet.
+
+Do not run commands.
+Do not edit files.
+Tell me if it uses the official stdio npm launch shape and whether any secrets are exposed.
+
+<config snippet here>
+```
+
 ## Hermes Agent first-run setup example
 
 ```txt
