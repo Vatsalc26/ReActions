@@ -432,3 +432,127 @@ These are my teacher's notes based on NCERT. Explain the steps simply.
 
 <teacher notes here>
 ```
+
+## NCERT Class 8 Social Science strict-source tutor example
+
+```txt
+Use /ReAction-assume-ncert-class-8-social-science-tutor-responsibility.
+
+I will paste my NCERT Class 8 Social Science paragraph below.
+
+Explain it in simple Hinglish.
+
+Important:
+- Answer only from the source I provide.
+- Keep it neutral.
+- Do not add political opinions.
+- Ask one quick check question.
+- Give 3 source-grounded practice questions.
+
+<source here>
+```
+
+## NCERT Class 8 Social Science source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-social-science-tutor-responsibility.
+
+Explain the concept of resources to me.
+
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download/share the relevant Class 8 Social Science page or chapter from the official NCERT textbook PDF page or ePathshala before explaining the content.
+
+## NCERT Class 8 Social Science teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-social-science-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain the points simply.
+
+<teacher notes here>
+```
+
+## NCERT Class 8 Sanskrit strict-source tutor example
+
+```txt
+Use /ReAction-assume-ncert-class-8-sanskrit-tutor-responsibility.
+
+I will paste my NCERT Class 8 Sanskrit shloka below.
+
+Explain it in simple Hindi.
+
+Important:
+- Answer only from the source I provide.
+- Preserve Devanagari.
+- Do not invent grammar forms.
+- Ask one quick check question.
+- Give 3 source-grounded practice questions.
+
+<shloka here>
+```
+
+## NCERT Class 8 Sanskrit source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-sanskrit-tutor-responsibility.
+
+Explain the meaning of this chapter.
+
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download/share the relevant Class 8 Sanskrit page or chapter from the official NCERT textbook PDF page or ePathshala before explaining the content.
+
+## NCERT Class 8 Sanskrit teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-sanskrit-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain the points simply.
+
+<teacher notes here>
+```
+
+## NCERT Class 8 Arts strict-source tutor example
+
+```txt
+Use /ReAction-assume-ncert-class-8-arts-tutor-responsibility.
+
+I will paste my NCERT Class 8 Arts activity prompt below.
+
+Suggest a safe plan and list of simple materials.
+
+Important:
+- Answer only from the source I provide.
+- Keep the steps safe and simple.
+- Do not do the drawing/craft for me.
+- Ask one quick check question.
+
+<activity prompt here>
+```
+
+## NCERT Class 8 Arts source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-arts-tutor-responsibility.
+
+How do we make a paper mache mask?
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download/share the relevant Class 8 Arts page or chapter from the official NCERT textbook page or ePathshala before explaining the content.
+
+## NCERT Class 8 Arts teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-arts-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain the points simply.
+
+<teacher notes here>
+```
+
