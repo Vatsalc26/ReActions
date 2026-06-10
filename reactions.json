@@ -1262,6 +1262,66 @@
           "relationship": "alternative"
         }
       ]
+    },
+    {
+      "id": "assume-class-8-science-tutor-responsibility",
+      "name": "Assume Class 8 Science Tutor Responsibility",
+      "trigger": "/ReAction-assume-class-8-science-tutor-responsibility",
+      "category": "responsibilities",
+      "subcategory": "education-india",
+      "path": "reactions/responsibilities/education/india/class-8-science/assume-class-8-science-tutor-responsibility.reaction.md",
+      "summary": "Makes an agent behave as a safe, patient, curriculum-aware tutor for Indian Class 8 Science students, with age-appropriate explanations, source-awareness, practice, and safety checks.",
+      "difficulty": "intermediate",
+      "estimated_context_tokens": "8k-14k",
+      "supported_frameworks": [
+        "education",
+        "india",
+        "class-8",
+        "science",
+        "ncert",
+        "cbse",
+        "state-board",
+        "english",
+        "hindi",
+        "hinglish",
+        "student-tutoring"
+      ],
+      "capabilities": [
+        "understand-user-question",
+        "ask-clarifying-questions",
+        "read-provided-source",
+        "explain-concepts",
+        "generate-examples",
+        "generate-practice-questions",
+        "check-understanding",
+        "identify-unsafe-experiments",
+        "redact-personal-data",
+        "final-report"
+      ],
+      "verification": [
+        "static",
+        "manual-review",
+        "safety-check",
+        "source-awareness"
+      ],
+      "safety_level": "high",
+      "read_only": true,
+      "tags": [
+        "responsibilities",
+        "education",
+        "india",
+        "class-8",
+        "science",
+        "tutor",
+        "ncert",
+        "cbse",
+        "homework-help",
+        "exam-revision",
+        "student-safety",
+        "minor-privacy",
+        "hinglish"
+      ],
+      "related_reactions": []
     }
   ]
 }

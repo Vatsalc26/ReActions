@@ -263,4 +263,30 @@ Important:
 - Return the final Cline CLI First-run Setup Report.
 ```
 
+## Class 8 Science tutor responsibility example
+
+```txt
+Use /ReAction-assume-class-8-science-tutor-responsibility.
+
+Explain friction to me in Hinglish like I am a Class 8 student.
+
+Important:
+- Keep it simple.
+- Use a daily-life example from India.
+- Ask one quick check question.
+- Give 2–3 practice questions.
+- Do not make it too advanced.
+```
+
+## Class 8 Science homework help example
+
+```txt
+Use /ReAction-assume-class-8-science-tutor-responsibility.
+
+Help me answer this Class 8 Science question, but explain the reasoning first:
+
+<Question here>
+```
+
+
 

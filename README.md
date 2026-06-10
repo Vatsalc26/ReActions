@@ -31,6 +31,19 @@ ReActions are Markdown-defined recipes that tell AI coding agents how to impleme
 
 Instead of asking every model to invent its own approach, a ReAction gives the agent a repeatable recipe with phases, required capabilities, pause conditions, safety rules, verification rules, and final reporting.
 
+## ReAction Responsibilities
+
+A ReAction tells an agent how to perform a repeatable task.
+
+A ReAction Responsibility tells an agent what role/accountability contract it must follow.
+
+For example:
+
+- a task ReAction can set up a tool
+- a responsibility ReAction can make an agent act as a safe Class 8 Science tutor
+
+Responsibilities define what the agent must own, verify, avoid, escalate, and report.
+
 ## Quick start
 
 Use a ReAction by giving it to a coding agent that can read files, edit files, run commands, and verify results.
@@ -169,6 +182,14 @@ See [`reactions/devtools/openhands/README.md`](reactions/devtools/openhands/READ
 
 See [`reactions/devtools/cline/README.md`](reactions/devtools/cline/README.md) for Cline ReActions.
 
+### Responsibilities / Education India
+
+| ReAction Responsibility | Trigger | Use when |
+|---|---|---|
+| Class 8 Science Tutor Responsibility | `/ReAction-assume-class-8-science-tutor-responsibility` | You want an agent to behave as a safe, patient, curriculum-aware tutor for Indian Class 8 Science. |
+
+See [`reactions/responsibilities/education/india/class-8-science/README.md`](reactions/responsibilities/education/india/class-8-science/README.md) for Class 8 Science Tutor Responsibilities.
+
 
 ## What a ReAction contains
 
@@ -220,6 +241,12 @@ reactions/
     cline/
       *.reaction.md
       README.md
+  responsibilities/
+    education/
+      india/
+        class-8-science/
+          *.reaction.md
+          README.md
 
 
 docs/
