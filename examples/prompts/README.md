@@ -305,5 +305,48 @@ These are my teacher's notes based on NCERT. Explain them simply and help me mak
 <teacher notes here>
 ```
 
+## NCERT Class 8 Hindi strict-source tutor example
+
+```txt
+Use /ReAction-assume-ncert-class-8-hindi-tutor-responsibility.
+
+I will paste my NCERT Class 8 Hindi paragraph below.
+
+Explain it in simple Hindi.
+
+Important:
+- Answer only from the source I provide.
+- Preserve Hindi text carefully.
+- Keep it Class 8 level.
+- Ask one quick check question.
+- Give 3 source-grounded practice questions.
+- Do not add outside summaries or internet facts.
+
+<source here>
+```
+
+## NCERT Class 8 Hindi source missing example
+
+```txt
+Use /ReAction-assume-ncert-class-8-hindi-tutor-responsibility.
+
+Explain this chapter to me.
+
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source, teacher notes, or student notes, or download the relevant Class 8 Hindi material from the official NCERT textbook PDF page or ePathshala before explaining the content.
+
+## NCERT Class 8 Hindi teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-hindi-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain them simply.
+
+<teacher notes here>
+```
+
 
 
