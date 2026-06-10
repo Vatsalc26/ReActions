@@ -40,7 +40,7 @@ A ReAction Responsibility tells an agent what role/accountability contract it mu
 For example:
 
 - a task ReAction can set up a tool
-- a responsibility ReAction can make an agent act as a safe Class 8 Science tutor
+- a responsibility ReAction can make an agent act as a strict-source NCERT Class 8 Science tutor
 
 Responsibilities define what the agent must own, verify, avoid, escalate, and report.
 
@@ -182,13 +182,13 @@ See [`reactions/devtools/openhands/README.md`](reactions/devtools/openhands/READ
 
 See [`reactions/devtools/cline/README.md`](reactions/devtools/cline/README.md) for Cline ReActions.
 
-### Responsibilities / Education India
+### Responsibilities / Education India NCERT
 
 | ReAction Responsibility | Trigger | Use when |
 |---|---|---|
-| Class 8 Science Tutor Responsibility | `/ReAction-assume-class-8-science-tutor-responsibility` | You want an agent to behave as a safe, patient, curriculum-aware tutor for Indian Class 8 Science. |
+| NCERT Class 8 Science Tutor Responsibility | `/ReAction-assume-ncert-class-8-science-tutor-responsibility` | You want an agent to tutor Class 8 Science using only NCERT textbook material, NCERT-based teacher notes, or NCERT-based student notes. |
 
-See [`reactions/responsibilities/education/india/class-8-science/README.md`](reactions/responsibilities/education/india/class-8-science/README.md) for Class 8 Science Tutor Responsibilities.
+See [`reactions/responsibilities/education/india/ncert/class-8-science/README.md`](reactions/responsibilities/education/india/ncert/class-8-science/README.md) for NCERT Class 8 Science Tutor Responsibilities.
 
 
 ## What a ReAction contains
@@ -244,9 +244,10 @@ reactions/
   responsibilities/
     education/
       india/
-        class-8-science/
-          *.reaction.md
-          README.md
+        ncert/
+          class-8-science/
+            *.reaction.md
+            README.md
 
 
 docs/

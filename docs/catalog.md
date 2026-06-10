@@ -15,7 +15,7 @@ A ReAction is a Markdown-defined recipe that tells an AI coding agent how to com
 | DevTools / Hermes Agent | 1 | First-run setup, local chat verification, provider setup, session verification, and safety workflows. |
 | DevTools / OpenHands | 1 | First-run setup, local Agent Canvas or CLI verification, provider setup, sandbox safety, and security workflows. |
 | DevTools / Cline | 1 | Cline CLI first-run setup, TUI verification, permissions review, MCP safety, and automation workflows. |
-| Responsibilities / Education India | 1 | Role/accountability contracts for safe, age-appropriate tutoring and student support. |
+| Responsibilities / Education India NCERT | 1 | Strict-source role/accountability contracts for safe, NCERT-grounded tutoring and student support. |
 
 ## How to use a ReAction
 
@@ -60,7 +60,7 @@ Important:
 | [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) | `/ReAction-setup-hermes-first-run` | advanced | Hermes Agent, Python, uv, Node.js, Git, Linux, macOS, Windows, WSL2, Termux | static, terminal, manual-review, redaction | [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md), [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md), [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) |
 | [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md) | `/ReAction-setup-openhands-first-run` | advanced | OpenHands, Agent Canvas, OpenHands CLI, Python, uv, Node.js, npm, Docker, macOS, Linux, Windows, WSL2 | static, terminal, manual-review, redaction | [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md), [Setup OpenClaw First Run](../reactions/devtools/openclaw/setup-openclaw-first-run.reaction.md), [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) |
 | [Setup Cline CLI First Run](../reactions/devtools/cline/setup-cline-cli-first-run.reaction.md) | `/ReAction-setup-cline-cli-first-run` | advanced | Cline, Cline CLI, Node.js, npm, Windows, macOS, Linux, WSL2 | static, terminal, manual-review, redaction | [Setup OpenHands First Run](../reactions/devtools/openhands/setup-openhands-first-run.reaction.md), [Setup Hermes First Run](../reactions/devtools/hermes/setup-hermes-first-run.reaction.md) |
-| [Assume Class 8 Science Tutor Responsibility](../reactions/responsibilities/education/india/class-8-science/assume-class-8-science-tutor-responsibility.reaction.md) | `/ReAction-assume-class-8-science-tutor-responsibility` | intermediate | Education, India, Class 8, Science, NCERT, CBSE, State Board, English, Hindi, Hinglish | static, manual-review, safety-check, source-awareness | — |
+| [Assume NCERT Class 8 Science Tutor Responsibility](../reactions/responsibilities/education/india/ncert/class-8-science/assume-ncert-class-8-science-tutor-responsibility.reaction.md) | `/ReAction-assume-ncert-class-8-science-tutor-responsibility` | advanced | Education, India, NCERT, Class 8, Science, Teacher Notes, Student Notes, English, Hindi, Hinglish | static, manual-review, safety-check, source-awareness, teacher-escalation-check | — |
 
 ## Frontend / Buttons
 
@@ -161,19 +161,19 @@ Pack guide:
 
 - [Cline ReActions README](../reactions/devtools/cline/README.md)
 
-## Responsibilities / Education India
+## Responsibilities / Education India NCERT
 
-Use these ReAction Responsibilities when you want an agent to assume a tutoring or student-support accountability contract.
+Use these ReAction Responsibilities when you want an agent to assume a strict-source tutoring or student-support accountability contract.
 
 Responsibility ReActions define what the agent must own, verify, avoid, escalate, and report while helping a user.
 
 | ReAction Responsibility | Difficulty | Safety Level | Read Only | Capabilities | Tags |
 |---|---|---|---|---|---|
-| [Assume Class 8 Science Tutor Responsibility](../reactions/responsibilities/education/india/class-8-science/assume-class-8-science-tutor-responsibility.reaction.md) | intermediate | high | true | understand-user-question, ask-clarifying-questions, read-provided-source, explain-concepts, generate-practice-questions, identify-unsafe-experiments | responsibilities, education, india, class-8, science, tutor, student-safety |
+| [Assume NCERT Class 8 Science Tutor Responsibility](../reactions/responsibilities/education/india/ncert/class-8-science/assume-ncert-class-8-science-tutor-responsibility.reaction.md) | advanced | high | true | identify-source-presence, classify-source-type, detect-source-sufficiency, read-provided-source, explain-from-source-only, generate-source-grounded-practice-questions, identify-unsafe-experiments, identify-teacher-escalation-cases | responsibilities, education, india, ncert, class-8, science, strict-source, student-safety |
 
 Pack guide:
 
-- [Class 8 Science Tutor Responsibilities README](../reactions/responsibilities/education/india/class-8-science/README.md)
+- [NCERT Class 8 Science Tutor Responsibilities README](../reactions/responsibilities/education/india/ncert/class-8-science/README.md)
 
 ## Source of truth
 

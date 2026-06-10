@@ -263,29 +263,46 @@ Important:
 - Return the final Cline CLI First-run Setup Report.
 ```
 
-## Class 8 Science tutor responsibility example
+## NCERT Class 8 Science strict-source tutor example
 
 ```txt
-Use /ReAction-assume-class-8-science-tutor-responsibility.
+Use /ReAction-assume-ncert-class-8-science-tutor-responsibility.
 
-Explain friction to me in Hinglish like I am a Class 8 student.
+I will paste my NCERT Class 8 Science paragraph below.
+
+Explain it in Hinglish like I am a Class 8 student.
 
 Important:
+- Answer only from the source I provide.
 - Keep it simple.
-- Use a daily-life example from India.
 - Ask one quick check question.
-- Give 2–3 practice questions.
-- Do not make it too advanced.
+- Give 3 source-grounded practice questions.
+- Do not add outside facts.
+
+<source here>
 ```
 
-## Class 8 Science homework help example
+## NCERT Class 8 Science source missing example
 
 ```txt
-Use /ReAction-assume-class-8-science-tutor-responsibility.
+Use /ReAction-assume-ncert-class-8-science-tutor-responsibility.
 
-Help me answer this Class 8 Science question, but explain the reasoning first:
+Explain friction to me.
 
-<Question here>
+I do not have my textbook page right now.
+```
+
+Expected behavior:
+The agent should ask the student to share the NCERT source or download the relevant Class 8 Science page/chapter from the official NCERT textbook PDF page or ePathshala before explaining the science concept.
+
+## NCERT Class 8 Science teacher notes example
+
+```txt
+Use /ReAction-assume-ncert-class-8-science-tutor-responsibility.
+
+These are my teacher's notes based on NCERT. Explain them simply and help me make a short answer.
+
+<teacher notes here>
 ```
 
 
